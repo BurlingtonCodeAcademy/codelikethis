@@ -21,8 +21,7 @@ In this lesson you will create a trivial web application in Express and deploy i
 
 - Inside this directory make a file named `app.js` and fill it with the following code:
 
-```
-```js
+``` js
 const express = require('express')
 const app = express()
 const port = process.env.PORT || 5000
@@ -65,8 +64,7 @@ Now make a git repo for your app.
 
 > Make sure you are in the correct directory with `pwd`
 
-```sh
-```sh
+```bash
 pwd           # the response should end with "hello-node"
 git init
 git add .
