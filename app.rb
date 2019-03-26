@@ -217,7 +217,12 @@ class App < Sinatra::Base
       sitename = request.host
     end
 
-    site = [CodeLikeThis, Bootcamp, JavascriptAfterHours].map(&:new).detect do |site|
+    site = [
+        CodeLikeThis,
+        Bootcamp,
+        JavascriptAfterHours,
+        DevopsWithPython
+    ].map(&:new).detect do |site|
       site.host? sitename
     end
     if site.nil?
