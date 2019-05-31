@@ -65,7 +65,7 @@ and sign up for accounts on:
 cmder
 
 ## VS Code Terminal
-1. Open VS COde
+1. Open VS Code
 2. Press <kbd>Crtl</kbd>-<kbd>Shift</kbd>-<kbd>P</kbd>, and type in `Default Shell`
 3. Choose  `Git Bash`
 
