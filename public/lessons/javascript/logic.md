@@ -160,6 +160,8 @@ Since the rules for type conversion are confusing, most JavaScript experts recom
 
 > always use `===`, never use `==`
 
+> Using `==` can have some very interesting side effects, see [Stackoverflow](https://stackoverflow.com/questions/359494/which-equals-operator-vs-should-be-used-in-javascript-comparisons)
+
 # Conjunction Junction
 
 You can make more complicated logical expressions using conjunctions:
