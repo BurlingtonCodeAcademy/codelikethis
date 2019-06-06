@@ -82,7 +82,7 @@ Wait a second. "Truthy?"
 
 Fortunately, `true` is truthy and `false` is falsy.
 
-Unfortunately, the string `"false"` is truthy, and the string `"0"` is truthy, even though the number `0` is falsy.
+Unfortunately, the string `"false"` is truthy, and the string `"0"` is truthy, even though the number `0` is falsy. This is because the string contains a character, and, even though the character is `0`, any string with at least one character is truthy.
 
 [MDN: Falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
 
