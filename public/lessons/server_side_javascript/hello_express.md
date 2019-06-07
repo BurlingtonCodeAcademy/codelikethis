@@ -44,7 +44,7 @@ app.listen(port, () => console.log(`Listening on port ${port}!`))
 
 A *package file* contains information about how to build and run your app.
 
-In Code, open the file named `package.json`, it will have a sectoin like this:
+In Code, open the file named `package.json`, it will have a section like this:
 
 ```json
 "scripts": {
