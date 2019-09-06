@@ -25,6 +25,16 @@ class Track
       lesson name: "/javascript/objects"
       lesson name: "object_methods"
       lesson name: "/oo/oo_js"
+      lesson name: "methods_and_classes"
+      lesson name: "/javascript/stacks"
+      lesson name: "simple_http"
+      lesson name: "/www/html"
+      lesson name: "/www/urls"
+      lesson name: "/www/dom_debugging"
+      lesson name: "hello_frenemy_www"
+      lesson name: "www/dom_scripting"
+      lesson name: "express_intro_and_serve"
+      lesson name: "deploy_tic-tac-toe"
       lesson name: "common_methods"
       end
     end
