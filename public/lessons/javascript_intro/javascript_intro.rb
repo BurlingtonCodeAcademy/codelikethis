@@ -22,7 +22,9 @@ class Track
       lesson name: "/javascript/loops"
       lesson name: "/javascript/scope"
       lesson name: "/javascript/iteration_methods"
-
+      lesson name: "/javascript/objects"
+      lesson name: "object_methods"
+      lesson name: "/oo/oo_js"
       lesson name: "common_methods"
       end
     end
