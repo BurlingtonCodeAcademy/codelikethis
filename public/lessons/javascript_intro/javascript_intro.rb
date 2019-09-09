@@ -30,11 +30,18 @@ class Track
       lesson name: "simple_http"
       lesson name: "/www/html"
       lesson name: "/www/urls"
+      lesson name: "/client_side_coding/dom"
       lesson name: "/www/dom_debugging"
       lesson name: "hello_frenemy_www"
       lesson name: "www/dom_scripting"
       lesson name: "express_intro_and_serve"
+      lesson name: "/server_side_javascript/routing"
       lesson name: "deploy_tic-tac-toe"
+      lesson name: "/www/css"
+      lesson name: "/responsive_layout/css_layout"
+      lesson name: "/responsive_layout/flexbox_layout"
+      lesson name: "/responsive_layout/css_grid"
+      lesson name: "whats_next"
       lesson name: "common_methods"
       end
     end

@@ -27,7 +27,6 @@ app.use(express.static(path.join(__dirname)));
 app.use("/styles", express.static(__dirname));
 app.use("/scripts", express.static(__dirname));
 
-// viewed at based directory http://localhost:8080/
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname + '/index.html'));
 });
