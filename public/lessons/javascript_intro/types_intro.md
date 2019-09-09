@@ -4,7 +4,9 @@ A **value** is a location in computer memory that stores DATA.
 
 There are many kinds of values, including String, Number, Array, Date, ... 
 
-(The different kinds of values are called TYPES. Soon you will create your own types but for now, we will use the built-in ones.)
+Different kinds of values are called **types**.
+
+We will be focusing on the most common types in this course
 
 # Numbers
 
@@ -243,18 +245,6 @@ Try various start and end values in the console and see what happens!
 
 [MDN Docs for Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
 
-# Numbers
-
-The following operations work on numbers:
-
-|operand|name|example|=|
-|---|---|---|---|
-| + | addition |     3 + 2 | 5 |
-| - | subtraction |  3 - 2 | 1 |
-| * | multiplication | 3 * 2 | 6 |
-| / | division | 3 / 2 | 1.5 |
-| % | modulus ("remainder") | 3 % 2 | 1 |
-| **| exponentiation ("power of") | 3 ** 2 | 9 |
 
 # Order of operations
 

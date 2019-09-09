@@ -2,7 +2,7 @@
 
 If you don't have a heroku account you should create one now.
 
-Go to heroku.com follow the signup instructions, and download their CLI tool.
+Go to [heroku.com](https://www.heroku.com) follow the signup instructions, and download their CLI tool.
 
 You will also need to download the Git CLI tool
 

@@ -44,3 +44,60 @@ returns an array of strings split at the specified character
 ```javascript
 'blueberry'.split('e') // => ['blu', 'b', 'rry']
 ```
+# Methods on Numbers
+
+Numbers also have some methods that can be called on them.  There is also a globally available `Math` class available in JavaScript which has a number of usefull methods attached to it
+
+# .toString()
+
+takes a number object and turns it into a string
+
+```javascript
+let x = 10
+x.toString() // => '10'
+```
+
+>Note that you will need to assign to value of the number to a variable and then call `.toString()` on the variable name otherwise you'll get a syntax error
+
+# .toPrecision(num)
+
+takes a number object and evaluatues it to a specified number of places
+
+```javascript
+let x = 7.54321768
+x.toPrecision(4) // => 7.543
+```
+
+# .isNaN()
+
+evaluates a value and returns a boolean depending on if it's a number or not
+
+```javascript
+x = 10
+y = 'cat'
+
+x.isNaN() // => false
+y.isNaN() // => true
+
+```
+
+# Math.floor(num)
+
+trims all decimal places off a given number
+
+```javascript
+
+Math.floor(134.97837) // => 134
+
+```
+
+>Note that this does not round the number, it just trims off everything after the decimal point
+
+# Math.random()
+
+returns a random number between 0 (inclusive) and one (exclusive)
+
+```javascript
+Math.random() // => a random number between 0 and 0.99999999999...
+
+```

@@ -19,10 +19,6 @@ Accounts:
 
 > If you do not have these, RAISE YOUR HAND!
 
-# A Taste of JavaScript
-
-You may never have coded before. Today you will.
-
 # What will we learn?
 
 In this class, you will learn about:
@@ -240,7 +236,7 @@ mkdir code
 * `mkdir` ("make dir") -- creates a new subdirectory inside the current directory
 * `cd` ("change dir") -- move into a different directory
 
-> These apply to Mac / Unix / Linux / bash
+> These apply to Mac / Unix / Linux / bash / cmder
 
 # Basic Command Review (DOS)
 

@@ -4,13 +4,13 @@ A character or group of characters that represent an action to be taken on one o
 
 # Types of Operators
 
-Arithmetic Operators
+* Arithmetic Operators
 
-Logical Operators
+* Logical Operators
 
-Comparison Operators
+* Comparison Operators
 
-Assignment Operators
+* Assignment Operators
 
 # Arithmetic Operators
 
@@ -18,12 +18,17 @@ Takes two numbers and performs an operation on them
 
 Returns a **new** number
 
-'+' addition
-'-' subtraction
-'*' multiplication
-'/' division
-'%' remainder
-'**' exponent
+* '+' addition
+
+* '-' subtraction
+
+* '*' multiplication
+
+* '/' division
+
+* '%' modulus
+
+* '**' exponent
 
 ```javascript
 2 + 1 // => 3
@@ -38,9 +43,11 @@ Returns a **new** number
 
 Evaluates two values or expressions and returns a boolean
 
-'&&'; **and** evaluates true if BOTH sides are truthy and returns the second value otherwise returns false
-'||'; **or** evaluates true if EITHER side is truthy and returns a boolean
-'!'; **not** inverts the truthyness/falsyness of the preceding value or expression
+* '&&'; **and** evaluates true if BOTH sides are truthy and returns the second value otherwise returns false
+
+* '||'; **or** evaluates true if EITHER side is truthy and returns a boolean
+
+* '!'; **not** inverts the truthyness/falsyness of the preceding value or expression
 
 ```javascript
 'dog' && 'cat' // => 'cat'
@@ -54,14 +61,21 @@ undefined || 'cat' // => false
 
 Compares two values and returns a boolean
 
-'>' greater than
-'<' less than
-'>=' greater than or equal to
-'<=' less than or equal to
-'==' equal to
-'===' REALLY equal to
-'!=' not equal
-'!==' REALLY not equal
+* '>' greater than
+
+* '<' less than
+
+* '>=' greater than or equal to
+
+* '<=' less than or equal to
+
+* '==' equal to
+
+* '===' REALLY equal to
+
+* '!=' not equal
+
+* '!==' REALLY not equal
 
 ```javascript
 5 > 3 // => true
@@ -79,9 +93,11 @@ Compares two values and returns a boolean
 Modifies an existing value
 MUTATES the value
 
-'=' sets the variable on the left equal to the value on the right
-'+=' adds the value to the right o the variable on the left
-'-=' subbtracts the value to the right from the variable on the left
+* '=' sets the variable on the left equal to the value on the right
+
+* '+=' adds the value to the right to the variable on the left
+
+* '-=' subtracts the value to the right from the variable on the left
 
 ```javascript
 let x = 7

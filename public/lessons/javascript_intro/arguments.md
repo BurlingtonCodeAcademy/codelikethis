@@ -1,6 +1,6 @@
 # ARGV
 
-In every NodeJS program, there is an array named `argv`. 
+In every NodeJS program there is an array named `argv`. 
 
 It contains the *command line arguments* to the program.
 

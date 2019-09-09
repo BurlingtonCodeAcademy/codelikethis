@@ -39,7 +39,9 @@ serving "." at http://127.0.0.1:8080
 * Express comes with its own static file server
 * Using it is a one-liner: 
 
-        app.use(express.static('.'))
+```javascript
+ app.use(express.static('.'))
+```
 
 # LAB: static file server
 
@@ -53,25 +55,31 @@ serving "." at http://127.0.0.1:8080
     
 * create a file called `app.js` containing the following code:
 
-        const express = require('express')
-        const app = express()
-        const port = process.env.PORT || 5000
-        
-        app.use(express.static('.'))
-        
-        app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+```javascript
+const express = require('express')
+const app = express()
+const port = process.env.PORT || 5000
+
+app.use(express.static('.'))
+
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+```
 
 * create a file called `index.html` containing
 
-        <h1>Hello in HTML</h1>
+```html
+<h1>Hello in HTML</h1>
+```
 
 * in `package.json`, add
 
-        {
-          "scripts": {
-            "start": "node app.js"
-          }
-        }
+```javascript
+{
+  "scripts": {
+    "start": "node app.js"
+  }
+}
+```
 
 * launch the web server using `npm start`
 
@@ -101,7 +109,9 @@ This is one major difference between *static sites* and *web apps* -- since some
 * in your top-level project dir, type `mkdir public`
 * in your `app.js`, change the `app.use` line to
 
-        app.use(express.static('public'))
+```javascript
+app.use(express.static('public'))
+```
 
 Now you can put HTML, CSS, PNG, and `.js` files inside `/public` where your clients can fetch them as needed
 
