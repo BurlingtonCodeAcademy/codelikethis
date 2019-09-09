@@ -2,43 +2,43 @@
 
 You've succesfully made it through the JavaScript After Hours part time course!
 
-celebratory image goes here...
+Where can you go from here?
 
-# Where do I go from here?
-  * Keep studying
+# How to be a programmer
 
-  * Refactor old code
-
-  * Join coding groups
-
-  * Keep practicing
+* [How to be a programmer in ten years](http://norvig.com/21-days.html)
+  * Get interested
+  * Program a lot
+  * Talk with other people
+  * Work on projects *with* others
+  * Work on projects *after* others
+  * Learn more programming languages
+  * Understand computer hardware a little
+  * Explore the standards
 
 # Online Resources
 
-* FreeCodeCamp
+* [FreeCodeCamp](https://www.freecodecamp.org)
 
-* Reactiflux (discord)
+* [Reactiflux](https://www.reactiflux.com/) - Discord
 
-* r/learnprogramming
+* [/r/learnprogramming](https://www.reddit.com/r/learnprogramming/) - Reddit
 
-* r/javascript
+* [/r/javascript](https://www.reddit.com/r/javascript/) - Reddit
 
-* Eloquent JavaScript
+* [Eloquent JavaScript](https://eloquentjavascript.net/)
 
-* You Don't Know JS
+* [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
 
-* Stack Overflow
-
-* MDN
+* [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
 
 # Local Communities
 
-* Burlignton Code
+* Meetups
+  * Burlignton Code
+  * Code for BTV
+  * VT Coders Connection
 
-* Code for BTV
-
-* VT Coders Connection
-
-* Tech Jam
+* [Tech Jam](https://techjamvt.com/)
 
 * Enroll in our JavaScript Bootcamp
