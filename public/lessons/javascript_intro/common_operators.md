@@ -16,7 +16,7 @@ Assignment Operators
 
 Takes two numbers and performs an operation on them
 
-Returns a NEW number
+Returns a **new** number
 
 '+' addition
 '-' subtraction
@@ -26,28 +26,28 @@ Returns a NEW number
 '**' exponent
 
 ```javascript
-2 + 1 //returns 3
-2 - 1 //returns 1
-2 * 2 //returns 4
-6 / 2 //returns 3
-6 % 3 //returns 0
-5 ** 2 //returns 25
+2 + 1 // => 3
+2 - 1 // => 1
+2 * 2 // => 4
+6 / 2 // => 3
+6 % 3 // => 0
+5 ** 2 // => 25
 ```
 
 # Logical Operators
 
 Evaluates two values or expressions and returns a boolean
 
-'&&' "and"; evaluates true if BOTH sides are truthy and returns the second value otherwise returns false
-'||' "or"; evaluates true if EITHER side is truthy and returns a boolean
-'!' "not"; inverts the truthyness/falsyness of the preceding value or expression
+'&&'; **and** evaluates true if BOTH sides are truthy and returns the second value otherwise returns false
+'||'; **or** evaluates true if EITHER side is truthy and returns a boolean
+'!'; **not** inverts the truthyness/falsyness of the preceding value or expression
 
 ```javascript
-'dog' && 'cat' //returns 'cat'
-null && 'cat' //returns false
-'dog' || 'cat' //returns true
-undefined || 'cat' //returns false
-!true //returns false
+'dog' && 'cat' // => 'cat'
+null && 'cat' // => false
+'dog' || 'cat' // => true
+undefined || 'cat' // => false
+!true // => false
 ```
 
 # Comparison Operators
@@ -64,14 +64,14 @@ Compares two values and returns a boolean
 '!==' REALLY not equal
 
 ```javascript
-5 > 3 //returns true
-5 < 3 //returns false
-5 >= 3 //returns true
-5 <= 5 //returns true
-5 == '5' //returns true
-5 === '5' //returns false
-'cat' != 'dog' //returns true
-'cat' !== 'cat' //returns false
+5 > 3 // => true
+5 < 3 // => false
+5 >= 3 // => true
+5 <= 5 // => true
+5 == '5' // => true
+5 === '5' // => false
+'cat' != 'dog' // => true
+'cat' !== 'cat' // => false
 ```
 
 # Assignment Operators
@@ -87,7 +87,7 @@ MUTATES the value
 let x = 7
 let y = 3
 
-x = y // x now equals 3
-x += y // x now equals 10
-x -= y // x now equls 4
+x = y // x => 3
+x += y // x => 6
+x -= y // x => 3
 ```

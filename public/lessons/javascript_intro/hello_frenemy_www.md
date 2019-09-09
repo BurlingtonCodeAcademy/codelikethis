@@ -1,6 +1,8 @@
 # Hello Friend Web Version
 
-Your Hello.js file can now filter out friends and enemies and respond accordingly. Awesome! Unfortunately it only exists on your local machine, and onle runs in the terminal.
+Your Hello.js file can now filter out friends and enemies and respond accordingly. Awesome!
+
+Unfortunately it only exists on your local machine, and onle runs in the terminal.
 
 Let's share it with the world!
 
@@ -9,29 +11,29 @@ Let's share it with the world!
 
   Inside that same directory create a new file called `index.html`
 
-  >Hint: In a blank HTML file you can type `!` and then hit `tab` to get a basic HTML template
+  >In a blank HTML file you can type `!` and then hit `tab` to get a basic HTML template.
 
 # Serving your Files
 
 We are going to use a javascript library called `node-static` to serve your static files so we can view them in the browser.
 
-First type `npm init -y` into the terminal. Accept all the default settings.
-  IMPORTANT: make sure you are in the correct directory first
+* First type `npm init -y` into the terminal. Accept all the default settings.
+  * IMPORTANT: make sure you are in the correct directory first
   
-  You should now have a file called `package.json` in your directory
+  * You should now have a file called `package.json` in your directory
 
-Next type `npm install node-static` into the terminal
+* Type `npm install node-static` into the terminal
 
-Finally type `npx node-static .` to serve your files to localhost.
-
-Go to localhost:8080 in your browser. What do you see?
+* Type `npx node-static .` to serve your files to localhost.
+  * Go to localhost:8080 in your browser. What do you see?
 
 # Adding Content
 Your browser probably just opened up to a blank page. This is because we haven't added any content yet, but that's easy to fix.
 
 Create a `<div>` element with an `id` property and add a little text content.
 
-Your `index.html` file should now look something like this:
+Your `index.html` file should now look something like this
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -70,3 +72,11 @@ Let's `console.log` out `window.location.pathname`
 What did you get?
 
 # Put it all Together
+
+Once we get the name we can pass it into the program
+
+Use your Javascript file to manipulate the DOM to display the desired message for the given name
+
+Restart your server and test it out!
+
+>You may need to do a hard refresh of the page before your changes take effect. `Ctrl` + `shift` + `r` to do a hard refresh on a PC; `cmd` + `shift` + `r` on Mac

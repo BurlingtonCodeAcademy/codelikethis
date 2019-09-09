@@ -1,6 +1,6 @@
 # Values
 
-A VALUE is a location in computer memory that stores DATA.
+A **value** is a location in computer memory that stores DATA.
 
 There are many kinds of values, including String, Number, Array, Date, ... 
 
@@ -69,8 +69,8 @@ In these lessons, we often use comments to explain the *result* of executing the
 
 ```javascript
 /* This is
- * a multiline
- * comment! */
+  a multiline
+  comment! */
 
  console.log(x /*some variable from earlier*/);
  ```
@@ -95,11 +95,32 @@ fruit.toUpperCase() // "BERRY"
 
 * ...so pick good names :-)
 
+# The Warehouse Metaphor
+
+Think of memory as a giant warehouse.
+
+![Warehouse from Raiders of the Lost Ark](../images/warehouse.jpg)
+
+Like this warehouse from the movie Raiders of the Lost Ark, 
+computer memory is vast and filled with boxes of various sizes.
+
+# The Warehouse Metaphor Explained
+
+If memory is a giant warehouse...
+
+...and memory locations are **boxes** in that warehouse
+
+...then a *value* is the **contents** of a box
+
+...and a *variable* is a **label** you stick on the outside of the box
+
+
 # Let there be confusion
 
 * `let` is just one way to declare a variable in JavaScript
 * `var` is a lot like `let` but has wider *scope* which is sometimes bad
-* If you don't use either `let` or `var` then the variable becomes *global* (which is dangerous)
+* `const` has similar scope to `let` but won't allow you to reasign the value
+* If you don't use either `let`, `var`, or `const` then the variable becomes *global* (which is dangerous)
 * Moral: *always use let* unless you have a good reason not to
 
 # Don't let me down 
@@ -122,26 +143,6 @@ SyntaxError: Identifier 'x' has already been declared
 ```
 
 * also confusing: the value of a `let` is `undefined`, but the value of a normal assignment is the value being assigned
-
-# The Warehouse Metaphor
-
-Think of memory as a giant warehouse.
-
-![Warehouse from Raiders of the Lost Ark](../images/warehouse.jpg)
-
-Like this warehouse from the movie Raiders of the Lost Ark, 
-computer memory is vast and filled with boxes of various sizes.
-
-
-# The Warehouse Metaphor Explained
-
-If memory is a giant warehouse...
-
-...and memory locations are **boxes** in that warehouse
-
-...then a *value* is the **contents** of a box
-
-...and a *variable* is a **label** you stick on the outside of the box
 
 # String Literals
 

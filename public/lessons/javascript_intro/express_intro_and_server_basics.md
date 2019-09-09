@@ -2,7 +2,7 @@
 
 According to expressjs.com (the official website for Express) Express is a "Fast, unopinionated, minimalist web framework for Node.js"
 
-#Cool! What Does That Mean?
+# Cool! What Does That Mean?
 
 Javascript was not built for server side coding and so it is very hard to write a working server using vanilla JavaScript, so we use a library to extend JavaScript's functionality to make server side codeing easy.
 
@@ -19,7 +19,7 @@ At its core, HTTP is a *file transfer protocol*.
 
 # node-static
 
-In earlier lessons, you may have used the `node-static` package to serve your HTML, JS, CSS, images, etc...
+In earlier lessons you used the `node-static` package to serve your HTML, JS, CSS, images, etc...
 
 *node-static* is a standalone static file server built in NodeJS
 

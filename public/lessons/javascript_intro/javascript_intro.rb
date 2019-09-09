@@ -3,11 +3,10 @@ require "track"
 class Track
   JavascriptIntro = Track.new(
       name: "javascript_intro",
-      display_name: "JavaScript After Hours Part Time Course",
+      display_name: "JavaScript After Hours",
       description: "Learn the basics of JavaScript and Web scripting",
       ) do
       
-      lesson name: "/a_taste_of_javascript/a_taste_of_javascript"
       lesson name: "terminal_basics"
       lesson name: "types_intro"
       lesson name: "/javascript/null"
@@ -15,10 +14,9 @@ class Track
       lesson name: "/javascript/arrays"
       lesson name: "/javascript/logic"
       lesson name: "hello_frenemy"
-      lesson name: "/javascript/variables"
       lesson name: "/javascript/functions"
-      lesson name: "/javascript/argv"
       lesson name: "age_calculator"
+      lesson name: "arguments"
       lesson name: "/javascript/loops"
       lesson name: "/javascript/scope"
       lesson name: "/javascript/iteration_methods"
@@ -30,13 +28,12 @@ class Track
       lesson name: "simple_http"
       lesson name: "/www/html"
       lesson name: "/www/urls"
-      lesson name: "/client_side_coding/dom"
       lesson name: "/www/dom_debugging"
       lesson name: "hello_frenemy_www"
-      lesson name: "www/dom_scripting"
-      lesson name: "express_intro_and_serve"
+      lesson name: "/www/dom_scripting"
+      lesson name: "express_intro_and_server_basics"
+      lesson name: "deploy_tic_tac_toe"
       lesson name: "/server_side_javascript/routing"
-      lesson name: "deploy_tic-tac-toe"
       lesson name: "/www/css"
       lesson name: "/responsive_layout/css_layout"
       lesson name: "/responsive_layout/flexbox_layout"

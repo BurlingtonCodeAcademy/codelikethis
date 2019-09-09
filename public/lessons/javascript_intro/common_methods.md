@@ -7,7 +7,7 @@ Methods do NOT mutate the strings they're called on. They return NEW strings wit
 Returns the character to the right of the specified index
 
 ```javascript
-'dog'.charAt(1) //returns 'o'
+'dog'.charAt(1) // => 'o'
 ```
 
 # .slice(num1, num2)
@@ -15,9 +15,9 @@ Returns the character to the right of the specified index
 Returns a string from the right of the first specified index to the left of the second specified index, or the end of the string
 
 ```javascript
-'supercalifragilisticexpialadocious'.slice(5, 9) //returns 'cali'
+'supercalifragilisticexpialadocious'.slice(5, 9) // => 'cali'
 
-'supercalifragilisticexpialadocious'.slice(9) //returns 'fragilisticexpialadocious'
+'supercalifragilisticexpialadocious'.slice(9) // => 'fragilisticexpialadocious'
 ```
 
 # .toLowerCase()
@@ -25,7 +25,7 @@ Returns a string from the right of the first specified index to the left of the 
 returns a lowercase version of the string it's called on
 
 ```javascript
-'HeLlo'.toLowerCase() //returns 'hello'
+'HeLlo'.toLowerCase() // => 'hello'
 ```
 
 # .toUpperCase()
@@ -33,7 +33,7 @@ returns a lowercase version of the string it's called on
 returns a capitalized version of the string it's called on
 
 ```javascript
-'hello'.toUpperCase() //returns HELLO
+'hello'.toUpperCase() // => HELLO
 ```
 
 
@@ -42,5 +42,5 @@ returns a capitalized version of the string it's called on
 returns an array of strings split at the specified character
 
 ```javascript
-'blueberry'.split('e') //returns ['blu', 'b', 'rry']
+'blueberry'.split('e') // => ['blu', 'b', 'rry']
 ```
