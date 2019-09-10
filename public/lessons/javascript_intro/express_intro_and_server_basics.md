@@ -46,12 +46,13 @@ serving "." at http://127.0.0.1:8080
 # LAB: static file server
 
 * create a new Express project dir called `static-server`:
-
-        cd ~/code
-        mkdir static-server
-        npm init -y
-        npm install express
-        code .
+```
+cd ~/code
+mkdir static-server
+npm init -y
+npm install express
+code .
+```
     
 * create a file called `app.js` containing the following code:
 
@@ -65,13 +66,13 @@ app.use(express.static('.'))
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 ```
 
-* create a file called `index.html` containing
+* create a file called `index.html` containing:
 
 ```html
 <h1>Hello in HTML</h1>
 ```
 
-* in `package.json`, add
+* in `package.json`, add:
 
 ```javascript
 {

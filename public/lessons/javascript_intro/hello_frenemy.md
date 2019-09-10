@@ -79,7 +79,7 @@ What happens? Is this what you expected?
 * First things first: get back to the command line
 * This program doesn't *exit* yet, so you will need to *force* it to close
 * Do this by holding down CONTROL and pressing C
-    * abbreviated ⌃C or ^C or CTRL-C
+    * abbreviated ⌃C or CTRL-C
 
 # Let's fix this
 

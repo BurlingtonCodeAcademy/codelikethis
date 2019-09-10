@@ -55,6 +55,8 @@ takes a number object and turns it into a string
 ```javascript
 let x = 10
 x.toString() // => '10'
+
+(42).toString() // => '42'
 ```
 
 >Note that you will need to assign to value of the number to a variable (or wrap it in parentheses) and then call `.toString()` on it otherwise you'll get a syntax error.
@@ -64,8 +66,7 @@ x.toString() // => '10'
 takes a number object and evaluatues it to a specified number of places
 
 ```javascript
-let x = 7.54321768
-x.toPrecision(4) // => 7.543
+(7.54321768).toPrecision(4) // => 7.543
 ```
 
 # .isNaN()

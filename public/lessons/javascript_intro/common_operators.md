@@ -43,11 +43,11 @@ Returns a **new** number
 
 Evaluates two values or expressions and returns a boolean
 
-* `&&`; **and** evaluates true if BOTH sides are truthy and returns the second value otherwise returns false
+* `&&` **and**; evaluates true if BOTH sides are truthy and returns the second value otherwise returns false
 
-* `||`; **or** evaluates true if EITHER side is truthy and returns a boolean
+* `||` **or**; evaluates true if EITHER side is truthy and returns a boolean
 
-* `!`; **not** inverts the truthyness/falsyness of the preceding value or expression
+* `!` **not**; inverts the truthyness/falsyness of the preceding value or expression
 
 ```javascript
 'dog' && 'cat' // => 'cat'
