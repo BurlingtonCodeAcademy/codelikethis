@@ -57,7 +57,7 @@ let x = 10
 x.toString() // => '10'
 ```
 
->Note that you will need to assign to value of the number to a variable and then call `.toString()` on the variable name otherwise you'll get a syntax error
+>Note that you will need to assign to value of the number to a variable (or wrap it in parentheses) and then call `.toString()` on it otherwise you'll get a syntax error.
 
 # .toPrecision(num)
 

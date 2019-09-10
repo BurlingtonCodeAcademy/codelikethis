@@ -227,14 +227,14 @@ mkdir code
 * `cd` ("change dir") moves you into a different directory
 * For example, `cd code` would move you into a subdirectory named `code`
 * If you ever get lost, type `cd` all on its own and press the return key. This will send you back to your home directory.
-  * (unix shell only, not Windows)
+> Unix shell only, not Windows!
 
 # Basic Command Review (Unix)
 
 * `pwd` ("print working dir") -- shows the name of the current directory
+* `cd` ("change dir") -- move into a different directory
 * `ls` ("list") -- shows the contents of the current directory
 * `mkdir` ("make dir") -- creates a new subdirectory inside the current directory
-* `cd` ("change dir") -- move into a different directory
 
 > These apply to Mac / Unix / Linux / bash / cmder
 
