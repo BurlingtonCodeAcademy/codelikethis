@@ -78,7 +78,7 @@ See [this twitter thread](https://twitter.com/b0rk/status/980825751456047104) fo
 
 # Node is a JavaScript Engine
 
-![Diagram: Node Train: Command Line](https://docs.google.com/drawings/d/e/2PACX-1vSKCgLe4wp1JroIot-SsVP-TKqHsySU-06oOGe3zYWBZ4jOc77quoRH2XhyNKBBuLx4IgbLim2NZLqK/pub?w=953&amp;h=522)
+![Diagram: Node Train: Command Line](/images/train.png)
 
 An "engine" is a type of program that either [*executes* or *empowers*](https://en.wikipedia.org/wiki/Software_engine) other programs.
 
