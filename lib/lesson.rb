@@ -267,9 +267,11 @@ class Lesson < Thing
       }
 
       stylesheet name: "github-markdown" # from https://github.com/sindresorhus/github-markdown-css/blob/gh-pages/github-markdown.css
-      stylesheet name: "highlight/solarized-light"
-      script defer: "defer",
-             src: "/highlight.min.js"
+      # stylesheet name: "highlight/solarized-light"
+      # script defer: "defer",
+      #        src: "/highlight.min.js"
+      script src: "https://cdn.jsdelivr.net/npm/prismjs@1.17.1/prism.min.js"
+      script src: "https://cdn.jsdelivr.net/npm/prismjs@1.17.1/plugins/autoloader/prism-autoloader.min.js"
     end
 
     def breadcrumbs

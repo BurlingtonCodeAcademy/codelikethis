@@ -5,21 +5,21 @@
 * The URL is a form of data communication
 * React-Router is a tool for declarative routing using components
 
-```javascript
-const Router = () => (
-  <BrowserRouter>
-    <Switch>
-      <Route exact path="/" component={Home} />
-      <Route path="/blogs/:blogId" component={App} />
-      <Route component={NotFound} />
-    </Switch>
-  </BrowserRouter>
-);
+```language-js
+const Router = () => {
+  return (
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/blogs/:blogId" component={App} />
+        <Route component={NotFound} />
+      </Switch>
+    </BrowserRouter>
+  )
+}
 
-ReactDom.render(
-  <Router />,
-  document.getElementById('root')
-);
+const root = document.getElementById('root');
+ReactDom.render(<Router />, root);
 ```
 
 # React Routing - Traditional
@@ -27,7 +27,7 @@ ReactDom.render(
 * Most web frameworks like Express, Angular, Ember, etc. have routing
 * Most routing systems are pretty static
 
-```javascript
+```language-js
 // Express example
 app.get('/', handleIndex)
 app.get('/posts, handlePosts)
@@ -43,7 +43,7 @@ app.listen()
 * React-router routes are just **special** components that delegate to others
 * Routes are generated when your app runs
 
-```javascript
+```language-js
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route } from "react-router-dom";
@@ -66,7 +66,7 @@ ReactDOM.render( <App />, root)
 * JSX from those components will be rendered on a "match"
 * React-router uses Regex to match the "path" to the "route"
 
-```javascript
+```language-js
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Link } from "react-router-dom";
@@ -84,7 +84,7 @@ const root = document.getElementById('root');
 ReactDOM.render( <Router />, root)
 ```
 
-```javascript
+```language-js
 // File: components/App.js
 import React from 'react';
 
@@ -107,7 +107,7 @@ export default App;
 * Browser URL is changed
 * Browser history is preserved
 
-```javascript
+```language-javascript
 import { Link } from 'react-router-dom';
 
 const Nav = () => {
@@ -153,7 +153,7 @@ ReactDOM.render(<Router />, rootElement);
 
 # React Routing - Matching Routes
 
-```javascript
+```language-javascript
 const App = () => {
   return (
     <div>
@@ -198,7 +198,7 @@ ReactDOM.render(<Router />, rootElement);
 * It is a JavaScript object
 * You can use the properties to do logic, or fill values
 
-```javascript
+```language-javascript
 const App = () => {
   return (
     <div>
@@ -272,7 +272,7 @@ Object {props: Object}
 * Parameters can be passed into components from the Route `path`
 * Parameters can be required or optional
 
-```javascript
+```language-javascript
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route } from "react-router-dom";
@@ -300,7 +300,7 @@ ReactDOM.render(<App />, rootElement);
 
 # React Router - Sub-Parameters
 
-```
+```language-javascript
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route } from "react-router-dom";
