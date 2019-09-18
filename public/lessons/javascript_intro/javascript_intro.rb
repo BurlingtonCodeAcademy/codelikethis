@@ -12,6 +12,8 @@ class Track
       lesson name: "/javascript/stacks"
       lesson name: "/javascript/null"
       lesson name: "common_operators"
+      lesson name: "countdown_lab"
+      lesson name: "divisible_lab"
       lesson name: "/javascript/logic"
       lesson name: "/javascript/arrays"
       lesson name: "hello_frenemy"
