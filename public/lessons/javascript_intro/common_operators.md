@@ -42,16 +42,27 @@ Returns a **new** number
 # Lab: Arithmetic
 
 In the terminal go into a node environment, and try to figure out the answers to the following questions using arithmetic operators
+
   * Does JavaScript follow order of operations when parsing equations?
+
   * What happens when you try to add a string number (e.g. `"12"`) to an actual number?
+
   * What happens when you try and subtract a string number from an actual number?
+
   * What happens when you perform arithmetic operations on strings?
+
     * addition?
+
     * subtraction?
+
     * multiplication?
+
     * division?
+
   * Can you perform operations on `NaN`?
+
   * Assign a variable `x` to a numerical value
+
     * perform an operation on `x`, what is the return value? What is the value of x?
 
 # Logical Operators
@@ -107,10 +118,15 @@ Compares two values and returns a boolean
 # Lab: Compare and Contrast
 
 Open up a node environment in your terminal, and let's play around with some comparison operators.
+
 * What happens when you compare two strings with greater than `>`?
+
   * Did it give you the value you expected?
+
   * What do you think it's using to compare the two?
+
 * What's the difference between the double equals `==` and triple equals `===`?
+
 * Are two empty arrays equal to each other? How about two arrays with identical content?
 
 # Assignment Operators
@@ -135,10 +151,17 @@ x -= y // x => 3
 
 # Lab: Assignments
 Let's take a few minutes to play around with assignment operators, so go ahead open up a node environment in your terminal, and let's figure some things out.
+
 * assign a variable `x` using the `let` keyword to a numerical value.
+
 * assign a variable `y` using the `const` keyword to a numerical value.
+
 * add a value to x using the `+=` operator. What's the value of `x`?
+
 * add a value to y using the `+=` operator. Did you get the value you expected?
+
 * create a variable named `string` that is a string.
+
   * add a value to `string` using `+=`, what is the value of `string`?
+
   * What is the value of string if you use `-=` instead?
