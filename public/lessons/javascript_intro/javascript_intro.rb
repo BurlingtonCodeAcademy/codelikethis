@@ -45,5 +45,6 @@ class Track
       lesson name: "whats_next"
       lesson name: "common_methods"
       lesson name: "/javascript/recursion"
+      lesson name: "asynchronous_js"
       end
     end
