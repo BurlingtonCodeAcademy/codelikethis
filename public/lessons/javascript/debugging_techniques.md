@@ -140,7 +140,7 @@ In FireFox:
 
 # Step 3: Run your Code
 
-Once you've added a breakpoint run your code, and step through the section by clicking the `step over` (&#8631)?(&#x293C)? button or pressing `f10`.
+Once you've added a breakpoint run your code, and step through the section by clicking the `step over`  button or pressing `f10`.
 
 If you've stepped through your code, and are still having issues finding where the errors are coming, or you find yourself traversing through previously unknown code there are several things you may want to try:
 

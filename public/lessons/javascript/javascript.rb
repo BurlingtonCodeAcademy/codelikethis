@@ -81,8 +81,7 @@ Track::Javascript = Track.new(
   lesson name: "scope"
   lesson name: "recursion"
 
-  lesson name: "/tricks_of_the_trade/debugging"
-  lesson name: "/tricks_of_the_trade/modern_debugging"
+  lesson name: "debugging_techniques"
 
   # lessons below this point are not necessarily in pedagogical order;
   # they may be woven in to the above track, or other tracks, as desired
@@ -99,7 +98,6 @@ Track::Javascript = Track.new(
 
 
   # ES6 and modern JS deep dives
-  lesson name: "debugging_techniques"
 
   lesson name: 'hybrid_styles' do
     topic name: "procedural-programming"
