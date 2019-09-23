@@ -18,7 +18,8 @@ A callback is a function definition that is passed to another function as an arg
 # Callback Hell
 
 Callback Hell aka the Christmas Tree of Doom can be easily recognized by the shape of your code. If you start getting something like this:
-```javascript
+
+```js
 function callbackHell(event) {
   function(result, function() {
     function(result, function() {
@@ -37,6 +38,7 @@ function callbackHell(event) {
   })
 }
 ```
+
 You're probably in callback hell
 
 
