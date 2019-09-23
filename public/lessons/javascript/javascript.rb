@@ -99,7 +99,7 @@ Track::Javascript = Track.new(
 
 
   # ES6 and modern JS deep dives
-  lesson name: "debugging"
+  lesson name: "debugging_techniques"
 
   lesson name: 'hybrid_styles' do
     topic name: "procedural-programming"
