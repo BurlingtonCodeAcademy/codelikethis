@@ -51,6 +51,44 @@ console.log(ageCalc(age))
 To flip it you could simply divide the `num` variable by `secInYr` rather than multiplying to get years in a number of seconds.
 
 
-# More Labs with Functions
+# More Functional Labs
 
-[More Labs](https://www.teaching-materials.org/javascript/exercises/functions)
+## Supply Calculator
+
+Write a function that:
+
+* accepts three arguments, an age, an amount per day, and an item
+* calculates the amount of items used over the course fo the rest of your life (based on a constant max age)
+* Outputs "You will need **Number** **Item**s to last the rest of your life." e.g.
+
+```js
+supplyCal(20, 3, "cookie") // => "You will need 87600 cookies to last the rest of your life"
+```
+
+> Supply Calculator inspired by the Lifetime Supply Calculator lab designed for the Girl Develope It! curriculum. The original can be found [here](https://www.teaching-materials.org/javascript/exercises/functions)
+
+## Titilize
+
+Write a function that:
+
+* accepts a string as an argument
+* splits apart the words in the string
+* capitalizes each word
+* returns a string with the first letter of each word capitalized e.g.
+
+```js
+titilize("eveRY green bus drives fAst") // => "Every Green Bus Drives Fast"
+```
+
+## MadLibs
+
+Write a function that:
+
+* accepts 3 arguments, the subject (noun), action (verb), and direct object (noun)
+* outputs a message saying "**noun** **verb**ed the **noun**!" e.g.
+
+```js
+madLib('Bill', 'jump', 'dog') // => "Bill jumped the dog!"
+```
+
+* Bonus: sanatize your inputs so the first word is *always* capitalized, and the other two words are *always* lowercase. 
