@@ -85,10 +85,12 @@ titilize("eveRY green bus drives fAst") // => "Every Green Bus Drives Fast"
 Write a function that:
 
 * accepts 3 arguments, the subject (noun), action (verb), and direct object (noun)
-* outputs a message saying "**noun** **verb**ed the **noun**!" e.g.
+* outputs a message saying " **noun** **verb**ed the **noun**!" e.g.
 
 ```js
 madLib('Bill', 'jump', 'dog') // => "Bill jumped the dog!"
 ```
 
-* Bonus: sanatize your inputs so the first word is *always* capitalized, and the other two words are *always* lowercase. 
+* Bonus: sanatize your inputs so the first word is *always* capitalized, and the other two words are *always* lowercase.
+
+* Double Extra Bonus: Expand this to a whole madlib story, not just a single sentence.
