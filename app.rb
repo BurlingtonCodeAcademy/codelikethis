@@ -34,6 +34,11 @@ class App < Sinatra::Base
   include Erector::Mixin
   include AppHelpers
 
+  if ENV['ROLLBAR_ACCESS_TOKEN']
+    require 'rollbar/middleware/sinatra'
+    use Rollbar::Middleware::Sinatra
+  end
+
   set :static_cache_control, [:public, :max_age => 300]
 
   before do
@@ -183,7 +188,7 @@ class App < Sinatra::Base
   end
 
   get "/topics/:topic_name" do
-    # todo: make this actually work
+    # TODO: make this actually work
     topic = Topic.new(name: params[:topic_name], site: site)
     page(thing: topic).to_html
   end
