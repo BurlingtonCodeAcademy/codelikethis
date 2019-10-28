@@ -60,7 +60,6 @@ See [this twitter thread](https://twitter.com/b0rk/status/980825751456047104) fo
   * Make it look like this:
 
 ![terminal next to browser](/images/terminal-and-browser.png)
-![terminal next to browser](/images/terminal-and-browser-win.png)
 
 # Lab: Interactive Calculator
 
@@ -120,7 +119,7 @@ If that doesn't print `'podcast'`, look at the prompt; you may be inside your sh
 
 # Where am I?
 
-* Inside the Terminal, you are always "inside" a directory.
+* Inside the Terminal, you are always *inside* a directory.
 * It is very easy to get lost in a maze of directories.
 * To find out which directory you are in, type: <kbd>p</kbd><kbd>w</kbd><kbd>d</kbd><kbd>Return</kbd>
   * This stands for "print working directory" (not "password").
@@ -236,7 +235,7 @@ Hello, World!
 
         console.log("Hello, World!");
 
-5. Save the file
+5. Save the file. You might want to set VSCode to auto-save.
 6. Switch back to the terminal (using <kbd>Alt</kbd>-<kbd>Tab</kbd> or <kbd>Cmd</kbd>-<kbd>Tab</kbd> or clicking)
   <br>(If you are using VS Code, you can click **Terminal &rarr; New Terminal** for the built-in terminal panel)
 7. Run this file using `node hello.js`
@@ -262,7 +261,7 @@ What happens? Is this what you expected?
 
 # Analyzing Countdown
 
-![Countdown Breakdown](https://docs.google.com/drawings/d/e/2PACX-1vT5Z2Po-THntSfzUutbzDljBAxqCEE9gh7HTzRAalMMqpSol8BTqUnjsD6vexS-EFrO5FCNBKHqwbxQ/pub?w=960&amp;h=720)
+![Countdown Breakdown](/images/count-loop.svg)
 
 > Consider this a sneak peek; we will cover all of these concepts in later lessons
 
