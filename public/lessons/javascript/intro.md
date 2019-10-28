@@ -15,9 +15,9 @@ In computers, code is a series of instructions that tell a computer what to do.
 
 # What is coding?
 
-* coding (aka programming or software development) is a *creative, human* activity
-* *coding* does not mean "cracking the code" or "deciphering" -- it's not a mystery or a secret, it's a language
-* the words (and numerals and punctuation) we write are translated into long strings of ones and zeros
+* coding (aka programming or software development) is a *creative, human* activity.
+* *coding* is a language. It's about translating meaning into symbols.
+* the words (and numerals and punctuation) we write are translated into long strings of ones and zeros.
 
 # What is coding NOT?
 
@@ -60,7 +60,7 @@ In computers, code is a series of instructions that tell a computer what to do.
 
 # Languages
 
-* every program is written in a LANGUAGE
+* every program is written in a *language*
   * like Java or Python or C or Fortran
   * even HTML and CSS and SQL are languages
   * every computer language has a silly name
@@ -98,10 +98,9 @@ Follow along online! Put a browser pointed at this site on one side of your scre
 
 * Pair up
 * Help your partner, help your neighbor
-* Docendo discimus ("By Teaching We Learn")
 * Promote yourself to TA
 
-> The best way to learn is to teach. <br>- [Latin proverb](https://en.wikipedia.org/wiki/Docendo_discimus)
+> Docendo discimus - The best way to learn is to teach. <br>- [Latin proverb](https://en.wikipedia.org/wiki/Docendo_discimus)
 
 # Technical requirements
 
