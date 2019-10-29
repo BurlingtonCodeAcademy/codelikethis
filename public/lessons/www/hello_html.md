@@ -61,8 +61,8 @@ So it looks like this:
 # Inspect The File With Chrome
 
 * In your browser, open the "Developer Tools" window
-  * On Mac - `⌘ + Shift + C`
-  * On Windows / Linux - `Ctrl + Shift + C` or `F12`
+  * On Mac - `⌘ + Shift + I`
+  * On Windows / Linux - `Ctrl + Shift + I` or `F12`
   * Or: *right click* on the page and select 'inspect'
 * If it isn't clear, find and click on the elements tab
 * Notice how the HTML tags are displayed
