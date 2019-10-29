@@ -40,7 +40,7 @@ fruit.toUpperCase()
 
 Please watch the instructor type this (or type it yourself) and then...
 
-> *Read the error!*
+> **Read the error!**
 
 # Errors are good
 
@@ -64,13 +64,13 @@ fruit.toUpperCase()
 TypeError: Cannot read property 'toUpperCase' of null
 ```
 
-* "`TypeError`" means "this is an error about data types" -- you thought you were using a string, but you weren't -- you were actually using `null` which is *not* a string
+* "`TypeError`" means "this is an error about data types" -- you thought you were using a string, but you weren't -- you were actually using `null` which is **not** a string
 
 * "`Cannot read property 'toUpperCase'`" means "you asked the value for a property named `toUpperCase` but there was no such property"
 
 * `of null` means "the value you were using was null"
 
-This error is confusing because it *buries the lede* -- you must read all the way to the end before you find the relevant clue ("`null`"), and it *omits* the name of the variable whose value was null ("`fruit`").
+This error is confusing because it **buries the lede** -- you must read all the way to the end before you find the relevant clue ("`null`"), and it **omits** the name of the variable whose value was null ("`fruit`").
 
 Sadly, it is your job as a programmer to translate "TypeError: Cannot read property 'toUpperCase' of null" into "We expected the variable `fruit` to contain a string, but it contained `null` instead."
 
@@ -78,12 +78,12 @@ Sadly, it is your job as a programmer to translate "TypeError: Cannot read prope
 
 * null pointer errors are **very** common
 * the trick is reading the error and figuring out
-    1. *where* it happened (*which line*)
-    2. *which variable* was null
-    3. *why* it was null
-* often once you know *which*, knowing *why* is obvious
+    1. **where** it happened (**which line**)
+    2. **which variable** was null
+    3. **why** it was null
+* often once you know **which**, knowing **why** is obvious
     * but sometimes it's a puzzle and you have to trace back
-    * e.g. the original problem was when *fruit was set to `null`*, but the error happened later, when the program tried to *use* `null` as if it were a string
+    * e.g. the original problem was when **fruit was set to `null`**, but the error happened later, when the program tried to **use** `null` as if it were a string
 
 # If You're Going To Fail...
 
@@ -133,6 +133,6 @@ if (user.profilePic) {
 }
 ```
 
-If `user.profilePic` is either `null` or `undefined` (or `false` or `NaN` or `''`) then we will show the default picture, thus *avoiding* a null pointer error when trying to show `user.profilePic`.
+If `user.profilePic` is either `null` or `undefined` (or `false` or `NaN` or `''`) then we will show the default picture, thus **avoiding** a null pointer error when trying to show `user.profilePic`.
 
 The pattern of checking for a valid value before proceeding is sometimes called a *guard clause* or *defensive programming*.

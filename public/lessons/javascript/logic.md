@@ -13,7 +13,7 @@
 
 # Truthiness
 
-Computers have a very particular idea of when things are *true* and *false*.
+Computers have a very particular idea of when things are **true** and **false**.
 
 # True or False?
 
@@ -37,8 +37,8 @@ Try the following in node:
 | `>=` | greater than or equal to |
 | `==` | equal to |
 | `!=` | not equal |
-| `===` | *really* equal to |
-| `!==` | *really* not equal to |
+| `===` | **really** equal to |
+| `!==` | **really** not equal to |
 
 [MDN: comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators)
 
@@ -47,9 +47,9 @@ a 19th-century mathematician who invented [Boolean algebra](https://en.wikipedia
 
 # Conditions
 
-The magic word `if` is a *conditional*.
+The magic word `if` is a **conditional**.
 
-The phrase immediately after `if` is a *condition*.
+The phrase immediately after `if` is a **condition**.
 
 ```js
 if (age < 18) {
@@ -70,7 +70,7 @@ Wait a second. "Truthy?"
 
 ![Truthiness](/images/truthiness.png)
 
-* in the Colbert Report, [truthiness](https://en.wikipedia.org/wiki/Truthiness) means things we *feel* to be true, even though we know they're probably not
+* in the Colbert Report, [truthiness](https://en.wikipedia.org/wiki/Truthiness) means things we **feel** to be true, even though we know they're probably not
 
 * In JavaScript, **all** values have truthiness **unless** they are defined as falsy.
 
@@ -78,7 +78,7 @@ Wait a second. "Truthy?"
 
 # What is falsiness?
 
-`false`, `null`, `undefined`, `0`, `NaN`, and the empty string (`""`) are all falsy.
+`false`, `null`, `undefined`, `0`, `NaN`, and the empty string (`""`) are all *falsy*.
 
 Fortunately, `true` is truthy and `false` is falsy.
 
@@ -88,7 +88,7 @@ Unfortunately, the string `"false"` is truthy, and the string `"0"` is truthy, e
 
 # if... then... else...
 
-The magic word `else` allows **BRANCHING**.
+The magic word `else` allows **branching**.
 
 ```js
 if (age >= 18) {
@@ -116,9 +116,9 @@ instead. Why?
 
 # The Tragedy of the Equal Sign
 
-* a single equal sign means ASSIGNMENT
+* a single equal sign means *assignment*
   * `name = "Alice"` -- "assign the value 'Alice' to the variable 'name'"
-* two equal signs means COMPARISON
+* two equal signs means *comparison*
   * `name == "Alice"` -- "does the variable 'name' contain the string 'Alice'?"
 
 > This is confusing! (More about it on the next slide.)
@@ -138,8 +138,8 @@ see also http://en.wikipedia.org/wiki/Assignment_%28computer_science%29#Assignme
 * the value of a comparison is either `true` or `false`
   * so `if (x == 2)` means `if x is 2` which changes based on `x`
 
-* the value of an assignment is the *value being assigned*
-  * so `if (x = 2)` means `if 2` which is *always truthy*
+* the value of an assignment is the **value being assigned**
+  * so `if (x = 2)` means `if 2` which is **always truthy**
   * also, the value of `x` will be 2 afterwards, no matter what it was before
 
 # The Tragedy of the Threequal Sign
@@ -151,10 +151,10 @@ That's three equal signs in a row.
 |Operator|Operation|Example|Meaning|
 |---|---|---|---|
 | `=`   | assignment         | `X = Y`  | let X equal Y |
-| `==`  | comparison (fuzzy) | `X == Y` | does X *mostly* equal Y? |
-| `===` | comparison (exact) | `X === Y`  | does X *really* equal Y? |
+| `==`  | comparison (fuzzy) | `X == Y` | does X **mostly** equal Y? |
+| `===` | comparison (exact) | `X === Y`  | does X **really** equal Y? |
 
-`==` means "does X equal Y, or if not, can Y be *converted* into something that equals X?"
+`==` means "does X equal Y, or if not, can Y be **converted** into something that equals X?"
 
 Since the rules for type conversion are confusing, most JavaScript experts recommend:
 

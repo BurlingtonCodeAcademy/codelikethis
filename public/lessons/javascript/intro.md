@@ -15,7 +15,7 @@ In computers, code is a series of instructions that tell a computer what to do.
 
 # What is coding?
 
-* coding (aka programming or software development) is a *creative, human* activity.
+* coding (aka programming or software development) is a **creative, human** activity.
 * *coding* is a language. It's about translating meaning into symbols.
 * the words (and numerals and punctuation) we write are translated into long strings of ones and zeros.
 
@@ -32,7 +32,7 @@ In computers, code is a series of instructions that tell a computer what to do.
   * there's always more than one way to do it
   * every solution has tradeoffs
   * there is always a better way, and never a perfect way
-  * often the hardest part of coding is *defining* the problem, not solving it
+  * often the hardest part of coding is **defining** the problem, not solving it
 
 > "The only perfect program is an empty file." - Alex
 
@@ -48,11 +48,11 @@ In computers, code is a series of instructions that tell a computer what to do.
 
 # A Program Is Like A Recipe
 
-* a recipe is a collection of *ingredients* and *instructions*
+* a recipe is a collection of **ingredients** and **instructions**
 
 ![Grandma's Cookie Recipe](/images/cookie-recipe.gif)
 
-* a program is a collection of *data* and *code*
+* a program is a collection of **data** and **code**
 
 > When you are writing code, you are not baking cookies, you are writing a recipe for how to make cookies.
 
@@ -72,7 +72,7 @@ In computers, code is a series of instructions that tell a computer what to do.
 
 * Don't be afraid of errors
 * Your computer is trying to help you fix your program
-  * It's just *really* bad at communicating
+  * It's just **really bad** at communicating
 
 > If your code is a two-year-old child, then an error is a temper tantrum.
 

@@ -114,9 +114,9 @@ In [VS Code](https://code.visualstudio.com/) you do this by typing <kbd>Ctrl</kb
 
 And let's do the same with the second condition, and the third.
 
-So now your code is *longer* but *skinnier* --
+So now your code is **longer** but **skinnier** --
  (more lines but each line is shorter)
-and more *self-documenting*
+and more **self-documenting**
  (because each line is inside a function whose name is meaningful).
 
 ```javascript
@@ -200,7 +200,7 @@ They're all cells, so let's name them `cell1`, `cell2`, and `cell3`.
   }
 ```
 
-And now that we've named the variables, we can extract *another* function...
+And now that we've named the variables, we can extract **another** function...
 
 (<kbd>Ctrl</kbd>-<kbd>Shift</kbd>-<kbd>R</kbd> and select "Extract to inner function in function 'winner'").
 
@@ -253,8 +253,8 @@ One key way to make your code clean is to **give meaningful names** to your prog
 Let's go back and look at the original function.
 It's easier to understand but it's still kind of messy.
 
-We've "abstracted out" (aka *reified*) the concept of *checking* for a winner,
-but we still need to do the same for the concept of figuring out *which* player has won.
+We've "abstracted out" (aka *reified*) the concept of **checking** for a winner,
+but we still need to do the same for the concept of figuring out **which** player has won.
 (This is currently embodied in the `winner` variable; assigning a value to `winner` and then returning it is the main purpose of the original function.)
 
 ```javascript
@@ -397,7 +397,7 @@ Scanning the entire function now, I can see that the various "check" functions a
 
 So let's turn them from functions back into data.
 
-First I want to use the *most useful refactoring*: **Rename**. In VS Code, that's as simple as hitting <kbd>F2</kbd>.
+First I want to use the **most useful refactoring**: *Rename*. In VS Code, that's as simple as hitting <kbd>F2</kbd>.
 
 And finally I want to "inline" the data by turning the "winConditions" array into a Hash, also called a JavaScript Object.
 

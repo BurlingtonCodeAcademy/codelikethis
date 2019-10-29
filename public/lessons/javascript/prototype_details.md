@@ -4,7 +4,7 @@
 
 * Reminder: **new** says:
   * make a new empty object
-  * set the object's *prototype* to be the constructor function's prototype
+  * set the object's **prototype** to be the constructor function's prototype
   * set `this` to point to the object
   * invoke the function
 * OK, so what is the function's prototype?
@@ -78,7 +78,7 @@
   * All cats share a single prototype
   * All mammals share a separate, single prototype
   * cat.x will look first on cat, then on Cat's prototype, then on Mammal's prototype
-* Yes, it's weird that the cat's prototype *is* a mammal, but so it goes
+* Yes, it's weird that the cat's prototype **is** a mammal, but so it goes
 * Note: we probably want to clean up the "constructor" property so `instanceof` works
 
         Cat.prototype.constructor = Cat; // sigh
@@ -160,7 +160,7 @@ function extend(Child, Parent) {
   * prototype.js
   * Yahoo User Interface (YUI)
   * ...
-* jQuery's extend does *not* do this; instead it merges the contents of two or more objects together into the first object
+* jQuery's extend does **not** do this; instead it merges the contents of two or more objects together into the first object
   * as it turns out, this is a completely different way to do inheritance in JS
 
 # Resources

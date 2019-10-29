@@ -17,11 +17,11 @@ Two related and overlapping concepts are [information hiding](https://en.wikiped
 
 # Why encapsulate?
 
-* keep *code* and *the data it uses* together
+* keep **code** and **the data it uses** together
 * limit state mutations (to a single file or a contiguous block of code)
 * limit reach of bugs
-* *increase cohesion* of data & the code that loves it
-* *decrease coupling* of unrelated program features
+* **increase cohesion** of data & the code that loves it
+* **decrease coupling** of unrelated program features
 * focus on one thing at a time
   * so you know where in your code to look
 
@@ -58,11 +58,11 @@ console.log("Area is " + circle.area());
 console.log("Radius is " + circle.radius); // THIS WILL FAIL
 ```
 
-* In the above code, `radius` is only visible inside the *scope* of the function `createCircle`. 
+* In the above code, `radius` is only visible inside the **scope** of the function `createCircle`. 
 
   * This is normal; any parameter or local variable is only visible inside its function.
 
-  * It's also visible inside the `area` function since that function is defined *inside* the function `createCircle`.
+  * It's also visible inside the `area` function since that function is defined **inside** the function `createCircle`.
 
 * `area` is a property on the hash (JS object) that is returned by `createCircle`
 
@@ -100,7 +100,7 @@ Note that only `area` and `circumference` are exposed via a pointer to the circl
 
 * The following cryptic syntax is very common in JS
 * It's essentially the same as the previous code, but combining two steps into one
-* It's called an **IIFE** = Immediately Invoked Function Expression
+* It's called an *IIFE* which stands for Immediately Invoked Function Expression
 
 ```js
 (function(){ })();
@@ -110,9 +110,9 @@ Expanded:
 
 ![IIFE Example](/images/iife-breakdown.png)
 
-The trick is, when you *invoke* the function, you generate a *new scope* for that invocation's closure.
+The trick is, when you **invoke** the function, you generate a **new scope** for that invocation's closure.
 
-You then *preserve* that scope by returning a pointer to an object that you created *inside* that closure.
+You then **preserve** that scope by returning a pointer to an object that you created **inside** that closure.
 
 # Encapsulation with IIFE Example
 

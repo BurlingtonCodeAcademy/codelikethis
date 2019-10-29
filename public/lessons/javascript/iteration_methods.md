@@ -16,19 +16,19 @@ Surprise!
 
 Every JavaScript *array* is also a JavaScript *object*
 
-That means that arrays have *properties* and *methods* like any other object.
+That means that arrays have **properties** and **methods** like any other object.
 
 Examples:
 
-  * `array.length` is a *read-only property* that always contains the number of elements in the array
-  * `array.reverse()` is a *method* that reverses the ordering of all elements in the array 
+  * `array.length` is a **read-only property** that always contains the number of elements in the array
+  * `array.reverse()` is a **method** that reverses the ordering of all elements in the array 
 
 See [MDN: Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods_2) to see a lot more array methods
 
 # Iteration Methods
 
 Every JavaScript array has a few [very handy methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Iteration_methods)
-that let you *apply a function* to its contents.
+that let you **apply a function** to its contents.
 
 | method | description | returns |
 |---|---|---|
@@ -123,7 +123,7 @@ fruits.find(endBerry)
 
 # Filter
 
-the `filter` iteration method returns *all* matching values, in a *new array*
+the `filter` iteration method returns **all** matching values, in a **new array**
 
 ```javascript
 let names = ['Alice', 'Bob', 'Charlie', 'Carol', 'David'];
@@ -164,7 +164,7 @@ fruits.filter(endBerry)
 
 # Map
 
-The `map` iteration method returns a *new array* whose elements correspond to the elements of the original array.
+The `map` iteration method returns a **new array** whose elements correspond to the elements of the original array.
 
 ```javascript
 let names = ['Alice', 'Bob', 'Charlie', 'Carol', 'David'];
@@ -196,7 +196,7 @@ function capitalize(word) {
 }
 ```
 
-Now please try to write a function that capitalizes *each word* in a string.
+Now please try to write a function that capitalizes **each word** in a string.
 
 ```javascript
 titleize("the rain in spain falls MAINLY on the PLAIN")
@@ -247,7 +247,7 @@ function titleize(phrase) {
 
 # Reduce
 
-The `reduce` method keeps track of a *running total* (aka *accumulator* or *memo*); whatever value the function returns is used as the accumulator for the next pass.
+The `reduce` method keeps track of a **running total** (aka *accumulator* or *memo*); whatever value the function returns is used as the accumulator for the next pass.
 
 Here's some code that counts the total number of letters across all words in an array:
 

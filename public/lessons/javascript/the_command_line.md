@@ -20,7 +20,7 @@
 
 # The Command Line
 
-* the **terminal** is a window into which you can talk directly to your computer
+* the *terminal* is a window into which you can talk directly to your computer
   * aka *console* or *command line* or *command prompt* or *shell*
 
 ![Shall we play a game?](/images/wargames-terminal.jpg)
@@ -52,11 +52,11 @@ See [this twitter thread](https://twitter.com/b0rk/status/980825751456047104) fo
   * **Windows**: launch the "Cmder" application (pronounced "Commander"), make a new console (<kbd>Ctrl</kbd>-<kbd>T</kbd>) and select
     * Startup command: `{bash::bash}`
     * Startup directory: `C:\Users\yourname`
-  * *Windows (alternate)*: Launch the Windows Command Prompt (`cmd.exe` or `PowerShell`) -- but beware, the commands are slightly different than in bash
+  * **Windows (alternate)**: Launch the Windows Command Prompt (`cmd.exe` or `PowerShell`) -- but beware, the commands are slightly different than in bash
 
-* **Important:** make your terminal as **tall** as possible and *don't overlap windows*
-  * when reading a program's output you want to start reading *at the top*...
-  * ...and if your window is too short then the top lines will *scroll away* and you will miss them
+* **Important:** make your terminal as **tall** as possible and **don't overlap windows**
+  * when reading a program's output you want to start reading **at the top**...
+  * ...and if your window is too short then the top lines will **scroll away** and you will miss them
   * Make it look like this:
 
 ![terminal next to browser](/images/terminal-and-browser.png)
@@ -65,7 +65,7 @@ See [this twitter thread](https://twitter.com/b0rk/status/980825751456047104) fo
 
 1. open a terminal
 1. look at the prompt -- it should end with a `$` or `>` symbol
-1. type `node` -- that's you *commanding* the computer to launch *node*
+1. type `node` -- that's you **commanding** the computer to launch **node**
 1. press the <kbd>Return</kbd> key (also called <kbd>Enter</kbd>)
 1. see the `>` prompt
 1. type `1 + 1`
@@ -73,13 +73,13 @@ See [this twitter thread](https://twitter.com/b0rk/status/980825751456047104) fo
 1. see the `2`
 
 * Yay! Your computer is an expensive calculator!
-* **Bonus**: what other math can you do?
+> **Bonus**: what other math can you do?
 
 # Node is a JavaScript Engine
 
 ![Diagram: Node Train: Command Line](/images/train.png)
 
-An "engine" is a type of program that either [*executes* or *empowers*](https://en.wikipedia.org/wiki/Software_engine) other programs.
+An "engine" is a type of program that either [**executes** or **empowers**](https://en.wikipedia.org/wiki/Software_engine) other programs.
 
 NodeJS (aka `node`) is an engine that runs JavaScript programs -- either from files, or interactively from the command line.
 
@@ -92,7 +92,7 @@ NodeJS (aka `node`) is an engine that runs JavaScript programs -- either from fi
     *  `Davids-Macbook-Pro:~ David$` (Mac)
     *  `david@davidspc:~$` (Ubuntu Linux)
     *   `C:\Users\david>` (Windows)
-* *node* is a command line program that is launched *from the shell*
+* *node* is a command line program that is launched **from the shell**
   * its prompt is usually `>`
 
 From inside `node`, if you want to get back to the shell...
@@ -114,12 +114,12 @@ If that doesn't print `'podcast'`, look at the prompt; you may be inside your sh
 
 * a *directory* is a location on your hard disk
   * also called a *folder*
-* directories can contain *files*
+* directories can contain **files**
 * directories can also contain other directories (called *subdirectories*)
 
 # Where am I?
 
-* Inside the Terminal, you are always *inside* a directory.
+* Inside the Terminal, you are always **inside** a directory.
 * It is very easy to get lost in a maze of directories.
 * To find out which directory you are in, type: <kbd>p</kbd><kbd>w</kbd><kbd>d</kbd><kbd>Return</kbd>
   * This stands for "print working directory" (not "password").
@@ -141,7 +141,7 @@ If that doesn't print `'podcast'`, look at the prompt; you may be inside your sh
 * when you type `ls` ("list") it shows the contents of the current directory
   * **On Windows** you may need to type `dir` instead
 
-* if you type `ls -al` ("list all long") it also shows *hidden* files and *extra info* like the modification date
+* if you type `ls -al` ("list all long") it also shows **hidden** files and **extra info** like the modification date
   * **On Windows** you may need to type `dir /A:SH` instead
 
 # Lab: Home Decor
@@ -153,7 +153,7 @@ If that doesn't print `'podcast'`, look at the prompt; you may be inside your sh
 
 # Making a directory
 
-* when you type `mkdir` ("make directory") it creates a new *subdirectory* inside the current directory
+* when you type `mkdir` ("make directory") it creates a new **subdirectory** inside the current directory
 
 ```bash
 mkdir code
@@ -204,9 +204,9 @@ mkdir code
 # Text Editor
 
 * a text editor is a program that edits a text file
-* a text editor is *like* a word processor
+* a text editor is **like** a word processor
 * but a text editor is **not** a word processor
-* You probably have *VS Code* <https://code.visualstudio.com/>
+* You probably have **VS Code** <https://code.visualstudio.com/>
   * others include *TextMate*, *Notepad++*, *Sublime Text*, *Vim*, *Emacs*, *Atom*
   * but **NOT** *TextEdit* or *Wordpad* or *Microsoft Word*
 
@@ -230,7 +230,7 @@ Hello, World!
 1. Make sure you are in your `code` subdirectory using `pwd` or `cd`
 2. Open this directory in your text editor
     * for VSCode, use `code .` ("code dot")
-3. Create a file named `hello.js` using the *File > New* menu
+3. Create a file named `hello.js` using the **File > New** menu
 4. Inside this file, put the following source code:
 
         console.log("Hello, World!");

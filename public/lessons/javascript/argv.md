@@ -13,7 +13,7 @@
 
 In every NodeJS program, there is a magic array named `argv`. 
 
-It contains the *command line arguments* to the program.
+It contains the **command line arguments** to the program.
 
 If the user types this in the Terminal:
 
@@ -50,7 +50,7 @@ and run it a few times from the Terminal, e.g.
 
 # LAB: Hi, Everybody!
 
-Change `hi.js` to say hi to *every one* of its command line arguments.
+Change `hi.js` to say hi to **every one** of its command line arguments.
 
 For instance:
 

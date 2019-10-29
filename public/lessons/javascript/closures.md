@@ -1,12 +1,12 @@
 # Closures
 
-A closure is
+A *closure* is
 
 * a function, with all its parameters and local variables
 
 PLUS
 
-* access to all the parameters and local variables of its *ancestor functions*
+* access to all the parameters and local variables of its **ancestor functions**
 
 [todo: diagram]
 
@@ -14,22 +14,22 @@ PLUS
 
 # Scope
 
-*scope* = all the variables that are *visible* from a given location in your code
+*scope* is all the variables that are **visible** from a given location in your code
 
 including:
 
   * local variables (`let` and `var`)
   * function parameters
-  * local variables and parameters of *nesting closures* of the current function
+  * local variables and parameters of **nesting closures** of the current function
   * global variables
 
 > scope is a one-way mirror -- inner scopes can see out, but outer scopes cannot see in
 
 # Lexical Scope
 
-Closures *add a layer* between global and local:
+Closures **add a layer** between global and local:
 
-  * local variables and parameters of *nesting closures* of the current function
+  * local variables and parameters of **nesting closures** of the current function
 
 This is called "lexical scope" because a line of code can "see" all variables that are declared (= written = lexical) in the same code block, even if that code block is inside a different (nesting) function. 
 
@@ -45,9 +45,9 @@ console.log(f(5));  // 15
 
 # Nested Scopes
 
-Every time you invoke a function, JS creates a new *scope* for that function
+Every time you invoke a function, JS creates a **new scope** for that function
 
-that points to the *current* scope
+that points to the **current** scope
 
 and so on recursively
 

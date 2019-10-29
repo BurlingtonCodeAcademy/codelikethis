@@ -21,7 +21,7 @@ while (someCondition) {
 }
 ```
 
-In English this reads, "While some condition is true, do some action".
+In English this reads, "While some condition is true, do some action."
 
 # while true
 
@@ -39,13 +39,13 @@ To stop it, hold down the CONTROL key and press the C key.
 
 This is called an *infinite loop*.
 
-**Note well!** The lines between `{` and `}` are INDENTED. Indentation is very important to you and other humans. It lets our eyes follow the patterns and helps us quickly see what parts of the program go with each other.
+**Note well!** The lines between `{` and `}` are **INDENTED**. Indentation is very important to you and other humans. It lets our eyes follow the patterns and helps us quickly see what parts of the program go with each other.
 
 # One Infinite Loop
 
 ![One Infinite Loop](/images/one-infinite-loop.jpg)
 
-*Fun Fact:* The address of Apple HQ is
+**Fun Fact:** The address of Apple HQ is
 
     1 Infinite Loop
     Cupertino, CA 95014
@@ -99,7 +99,7 @@ This is fairly complicated, so let's stop here and make sure to understand every
 
     let count = 1
 
-creates a *variable* named `count` and sets its value to `1`.
+creates a **variable** named `count` and sets its value to `1`.
 
     while (count <= 100)
 
@@ -115,11 +115,11 @@ prints the current value of count.
 
       count = count + 1
 
-*increments* the `count` variable... it was `1`, so now it's `2`
+**increments** the `count` variable... it was `1`, so now it's `2`
 
     }
 
-goes *back to the `while` line* and checks again
+goes **back to the `while` line** and checks again
 
 # `while` breakdown (pt.3)
 
@@ -178,16 +178,16 @@ In the next slides we will examine several different ways to write the One Potat
 
 # functional decomposition
 
-The first thing we'll do is *decompose* the problem into two smaller problems:
+The first thing we'll do is **decompose** the problem into two smaller problems:
 
 1. counting from 1 to 8
 2. printing the correct message for each line
 
-*Decomposition* is one of the most important skills in programming. It lets you focus.
+*Decomposition* is one of the most important skills in programming. It lets you focus on one task at a time.
 
 Also known as "*divide and conquer*".
 
-Introducing a *function* is the most straightforward way to embody a smaller task.
+Introducing a **function** is the most straightforward way to embody a smaller task.
 
 [Modular Decomposition](http://www.cs.columbia.edu/~evs/songs/Modular_20Decomposition.mp3) song by Eric Siegel, Ph.D.
 
@@ -195,13 +195,13 @@ Introducing a *function* is the most straightforward way to embody a smaller tas
 
 Functional decomposition is also a great way to write a program that you haven't quite figured out yet.
 
-When you reach a step that you don't know how to do, or just don't want to think about right now, call a function *that you haven't written yet*.
+When you reach a step that you don't know how to do, or just don't want to think about right now, call a function **that you haven't written yet**.
 
-Then later on -- only *after* the parent function is written -- go back and make the faked-out function work.
+Then later on -- only **after** the parent function is written -- go back and make the faked-out function work.
 
 # counting potatoes
 
-Let's separate *formatting* from *counting*.
+Let's separate **formatting** from **counting**.
 
 This function does one thing only: create the correct string for a given line number.
 
@@ -277,7 +277,7 @@ for (let lineNumber of lineNumbers) {
 
 # LAB: Prime Numbers
 
-A *prime number* is one that is only *divisible* by itself and 1.
+A *prime number* is one that is only divisible by itself and 1.
 
 The goal of this lab is to print all (and only) the prime numbers between 2 and 100.
 
@@ -291,7 +291,7 @@ To do this, your code will probably need to use one or the other, or both, of th
 <details>
 <summary>Hint 1</summary>
 <div>
-You may want to use the logic in the `isDivisible` function you made during the functional labs.
+You may want to use the logic in the `isDivisible` function you made previously.
 
 ```js
 function divisible(divisor, dividend) {

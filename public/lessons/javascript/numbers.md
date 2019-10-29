@@ -5,7 +5,7 @@
 # Number
 
 * JavaScript has a built-in type called `Number`.
-* It represents decimal numbers, aka *floating-point* decimals.
+* It represents decimal numbers, aka *floating-point numbers*.
 * JavaScript does not have a special type for integers, unlike most other languages.
 
 [MDN Docs for Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
@@ -55,7 +55,7 @@ A: *It depends!*
 
 # LAB: one nation, divisible
 
-One number is *divisible* by another if you divide them and the *remainder* is 0.
+One number is *divisible* by another if you divide them and the **remainder** is 0.
 
 Write code in `node` to figure out if...
 
@@ -78,7 +78,7 @@ Hmmm again...
 
     "1" + 2
 
-Even though Strings and Numbers are different TYPES, JavaScript converts one to the other.
+Even though Strings and Numbers are different *types*, JavaScript converts one to the other.
 
 But when two types meet, which one wins? 
 
@@ -89,7 +89,7 @@ The clearest answer is that you, the programmer, explicitly declare which type y
 # Converting a Number to a String
 
 ```js
-(12).toString() // "12"
+(12).toString() // => "12"
 ```
 
 # Converting a String to a Number
@@ -112,9 +112,9 @@ The easiest and cleanest is `unary +`:
 
 # Type Coercion
 
-If you don't explicitly do *type conversion* then JavaScript will "helpfully" convert the types for you.
+If you don't explicitly do **type conversion** then JavaScript will "helpfully" convert the types for you.
 
-This is called type *coercion* and just like with people, coercion is stressful and often backfires.
+This is called *type coercion* and just like with people, coercion is stressful and often backfires.
 
 For instance, if you ask the user their age, and read it from a web form or keyboard input, it will be in a string. If you forget to explicitly convert that to a number before using it in a calculation, the results can be unexpected...
 
@@ -129,9 +129,9 @@ For instance, if you ask the user their age, and read it from a web form or keyb
 
 [Math.random](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) is your way to make things unpredictable!
 
-Calling `Math.random()` returns a random *decimal* number between 0 and 1.
+Calling `Math.random()` returns a random **decimal** number between 0 and 1.
 
-If you want a random *integer* you can multiply that decimal by a range, like this: 
+If you want a random **integer** you can multiply that decimal by a range, like this: 
 
 ```js
 function randomInteger(min, max) {
@@ -166,7 +166,7 @@ JavaScript numbers...
   * are stored in binary
   * have a fixed bit-length
 
-Some rational numbers *cannot be represented* in floating-point, which means that simple arithmetic may give unexpected results.
+Some rational numbers **cannot be represented** in floating-point, which means that simple arithmetic may give unexpected results.
 
 For instance, you can't go higher than about 9 quadrillion without glitching...
 
@@ -175,7 +175,7 @@ For instance, you can't go higher than about 9 quadrillion without glitching...
 true
 ```
 
-(This problem is not unique to JavaScript, but the fact that *all* numbers in JS are floating-point means that beginners can't avoid it.)
+(This problem is not unique to JavaScript, but the fact that **all** numbers in JS are floating-point means that beginners can't avoid it.)
 
 see [Wikipedia on IEEE 754 double](https://en.wikipedia.org/wiki/Double-precision_floating-point_format) aka Double-precision floating-point format or binary64
 

@@ -64,8 +64,8 @@ let alice = {firstName: 'Alice', lastName: 'Liddell'};
 let bob = {firstName: 'Bob', lastName: 'Jones'};
 alice.fullName = function() { return this.firstName + " " + this.lastName; }
 bob.fullName = alice.fullName;  // Whoa, trippy!
-alice.fullName(); //=> "Alice Liddell"
-bob.fullName(); //=> "Bob Jones"
+alice.fullName(); // => "Alice Liddell"
+bob.fullName(); // => "Bob Jones"
 ```
 
 # Closures

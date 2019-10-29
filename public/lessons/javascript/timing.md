@@ -38,9 +38,9 @@ In this lesson we will focus on callbacks in the context of another very useful 
 
 A *callback* is just a function.
 
-What makes it special is that you pass in *as a parameter* to a different function.
+What makes it special is that you pass in **as a parameter** to a different function.
 
-Later on, the callback function *gets called back* -- but **not by your own code**.
+Later on, the callback function **gets called back** -- but **not by your own code**.
 
 Rather, the function that you passed it in to in the first place either calls it immediately, or stores it away somewhere, so that it can be called when something else happens later on...
 
@@ -55,9 +55,9 @@ You call it with two parameters:
   1. a callback function (let's call it F)
   2. a number of milliseconds (let's call it N)
 
-`setTimeout` returns *immediately*, but also sets up a hidden timer
+`setTimeout` returns **immediately**, but also sets up a hidden timer
 
-after approximately N milliseconds, F gets *called back*
+after approximately N milliseconds, F gets **called back**
 
 Try this now:
 
@@ -76,7 +76,7 @@ later();
 
 # setTimeout with inline callback
 
-This "later alligator" program could be rewritten to use an *anonymous inline function* instead of a named top-level function.
+This "later alligator" program could be rewritten to use an **anonymous inline function** instead of a named top-level function.
 
 ```javascript
 function later() {
@@ -88,14 +88,14 @@ function later() {
 later();
 ```
 
-Using *inline callbacks* is a very common idiom in JavaScript, especially with `setTimeout`.
+Using **inline callbacks** is a very common idiom in JavaScript, especially with `setTimeout`.
 
 The syntax can be confusing because of all the parentheses and curly braces, but it's essentially the same pattern as above:
 
 * call `setTimeout` with two parameters
-* the first parameter *is a function* that prints "Alligator!"
-* the second parameter is a *number* of milliseconds
-* `setTimeout` will *return immediately*, then wait 1000 msec, then call the function
+* the first parameter **is a function** that prints "Alligator!"
+* the second parameter is a **number** of milliseconds
+* `setTimeout` will **return immediately**, then wait 1000 msec, then call the function
 
 > Note that even though "See you later" appears **lower** in the code than "Alligator", it happens **first** because `setTimeout` returns **immediately**.
 
@@ -111,7 +111,7 @@ Let's zoom in on the call to `setTimeout`.
 
 * This code looks weird! It will probably take you a while before inline function arguments look and feel natural to you.
 * The key to understanding this code is to remember that this is a normal function call with two parameters, just like `add(2, 2)`.
-* The weirdness comes from the fact that the first argument is **not** a function call. It's an *entire function* defined *inline*:
+* The weirdness comes from the fact that the first argument is **not** a function call. It's an **entire function** defined **inline**:
 
 ```javascript
 function() { console.log("Alligator!") }
@@ -127,7 +127,7 @@ The comma separating the parameters comes immediately after the inline function'
               comma   
 ```
 
-Fat arrows can make inline function code more concise, and (to some) clearer. YMMV!
+Fat arrows can make inline function code more concise, and (to some) clearer.
 
 ```javascript
 setTimeout( () => console.log("Alligator!") , 1000 );
@@ -144,8 +144,8 @@ Write a function named `waitASecond` that...
 1. Gets the current time in milliseconds
 2. Saves it in a variable
 3. Uses `setTimeout` to set up a one second timer
-4. When the callback executes, get the current time *again*
-5. *Subtract* the start time from the new current time and print that value
+4. When the callback executes, get the current time **again**
+5. **Subtract** the start time from the new current time and print that value
 
 Now run the function several times in a row. What do you notice?
 
@@ -170,7 +170,7 @@ function waitASecond() {
 
 It works a lot like `setTimeout` but is a little more complicated.
 
-After calling `setInterval`, JavaScript will call your callback *again and again forever* until you *clear* the timer.
+After calling `setInterval`, JavaScript will call your callback **again and again forever** until you **clear** the timer.
 
 For example:
 

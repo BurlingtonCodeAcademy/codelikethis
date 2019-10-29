@@ -2,11 +2,11 @@
 
 (Prerequisite: [I/O lesson](/lessons/javascript/input_and_output))
 
-This is a **very** big topic, but briefly...
+This is a *very* big topic, but briefly...
 
 # Sequences 
 
-Traditional programs are written using *sequences*, which are performed in order like a traditional recipe, performed by a single chef:
+Traditional programs are written using **sequences**, which are performed in order like a traditional recipe, performed by a single chef:
 
 0. preheat oven to 350&deg;
 1. roll out dough on baking sheet
@@ -26,7 +26,7 @@ Or, you could have one cook rolling, cutting, and baking, and another cook remov
 
 # Events
 
-NodeJS programs are written using *events*, which is like a bunch of cooks, each performing one part of the recipe.
+NodeJS programs are written using **events**, which is like a bunch of cooks, each performing one part of the recipe.
 
 * when starting, preheat oven to 350&deg;
 * when dough is mixed, roll it out onto the baking sheet
@@ -38,7 +38,7 @@ NodeJS programs are written using *events*, which is like a bunch of cooks, each
 
 # Events are not necessarily in order!
 
-The source code of the evented cookie baking program in the previous slide could *just as well* be written like this:
+The source code of the evented cookie baking program in the previous slide could **just as well** be written like this:
 
 * when cookies are cool, decorate each cookie
 * when the dough is on the baking sheet, start cutting out cookies
@@ -71,7 +71,7 @@ This means
 
 # Anonymous Callbacks
 
-An anonymous callback is also a function, but this time it's defined *inline*.
+An anonymous callback is also a function, but this time it's defined **inline**.
 
 Example:
 
@@ -82,7 +82,7 @@ process.stdin.once('data', function (name) {
 });
 ```
     
-Note that the *second argument* to the `once` method is the same as the *entire sayHi function* from the previous slide...
+Note that the **second argument** to the `once` method is the same as the **entire sayHi function** from the previous slide...
  
 * up to and including the close brace `}`... 
 * but not including the close paren and semicolon `);`
@@ -90,7 +90,7 @@ Note that the *second argument* to the `once` method is the same as the *entire 
 
 # Anonymous Fat-Arrow Callbacks
 
-You will often see the *fat arrow* variant syntax in anonymous callbacks.
+You will often see the **fat arrow** variant syntax in anonymous callbacks.
 
 Example:
 
@@ -101,11 +101,11 @@ process.stdin.on('data', (name) => {
 });
 ```
     
-Note that the second argument to the `once` method is the same as the the previous slide, but with `=>` *after* the parameter list, instead of the word `function` *before* the parameter list.
+Note that the second argument to the `once` method is the same as the the previous slide, but with `=>` **after** the parameter list, instead of the word `function` **before** the parameter list.
 
 # Nesting
 
-To *force* events to happen *in order* you may need to *nest* your callbacks.
+To **force** events to happen **in order** you may need to **nest** your callbacks.
 
 ```js
     console.log('what is your name?')
@@ -123,7 +123,7 @@ To *force* events to happen *in order* you may need to *nest* your callbacks.
     });
 ```
 
-Yes, nested callbacks are confusing. This is an example of *callback hell*.
+Yes, nested callbacks are confusing. This is an example of **callback hell**.
 
 # Callback Hell
 
@@ -148,13 +148,13 @@ async function start() {
 
 > note: for this to work, the `ask` function must return a Promise
 
-Note that instead of passing the result in to a callback function, `await` returns the result *just like a normal function call* so you can assign it to a variable. 
+Note that instead of passing the result in to a callback function, `await` returns the result **just like a normal function call** so you can assign it to a variable. 
 
 # Events: pros and cons
 
 Evented programs are often more flexible and high-performance than traditional sequenced programs, but they can be more confusing for humans to write and to read (and to debug!).
 
-Also, sequences naturally *end* when they are finished, but evented programs will just keep doing the same things over and over again, as long as the triggers keep happening.
+Also, sequences naturally **end** when they are finished, but evented programs will just keep doing the same things over and over again, as long as the triggers keep happening.
 
 This means that you need to explicitly call `process.exit()` in NodeJS programs.
 
@@ -162,10 +162,10 @@ This means that you need to explicitly call `process.exit()` in NodeJS programs.
 
 `once` is a special case of a more common method named `on`. The difference is that 
 
-* `on` sets up an event handler that is called back *any time* the event occurs
-* `once` sets up the same thing, but then *removes* it after the first call
+* `on` sets up an event handler that is called back **any time** the event occurs
+* `once` sets up the same thing, but then **removes** it after the first call
 
-The following code will *keep saying hello* every time the user enters another line of text.
+The following code will **keep saying hello** every time the user enters another line of text.
 
 ```js
 console.log("What is your name?");

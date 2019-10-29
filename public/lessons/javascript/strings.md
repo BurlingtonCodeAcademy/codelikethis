@@ -21,7 +21,7 @@
 * some characters can't be typed literally, so you need to use *string escapes*
 * backslash (<kbd>\\</kbd>) is the *escape character* in JavaScript strings
 * backslash means "the next character means something special"
-  * for instance backslash-n (`\n`) means "newline"
+  * for instance backslash-n (`\n`) means *newline*
 
 ```js
 console.log("Roses are red,\nViolets are blue;\nCandy is sweet,\nAnd so are you.")
@@ -82,16 +82,16 @@ Humans like to start counting at 1, but computers like to start counting at 0.
 
 This can be confusing, so here's a visualization to help explain it.
 
-Think of the indexes as pointing at the *spaces between* characters, as in this diagram:
+Think of the indexes as pointing at the **spaces between** characters, as in this diagram:
 
     | B | L | U | E | B | E | R | R | Y |
     0   1   2   3   4   5   6   7   8   9
      
 So with this picture in your mind, `slice`...
   
-   * includes the character to the *right* of the start index
-   * includes the character to the *left* of the end index...
-   * ...but *excludes* the character to the *right* of the end index
+   * includes the character to the **right** of the start index
+   * includes the character to the **left** of the end index...
+   * ...but **excludes** the character to the **right** of the end index
 
 Try various start and end values in the console and see what happens!
 
@@ -99,7 +99,7 @@ Try various start and end values in the console and see what happens!
 
 Q: A string is "a series of characters"... but what is a character?
 
-A: a character is a *number* (or *character code*) that stands for a *symbol*.
+A: a *character* is a **number** (or **character code**) that stands for a **symbol**.
 
 |symbol|code|name|
 |---|---|---|
@@ -110,7 +110,7 @@ A: a character is a *number* (or *character code*) that stands for a *symbol*.
 | `a` | 97 | lowercase A |
 | ??? | 10 | newline |
 
-(Some characters stand for *unprintable* symbols like `newline` or `tab` or `bell`.)
+(Some characters stand for **unprintable** symbols like `newline` or `tab` or `bell`.)
 
 # ASCII and ye shall receive-ski
 
@@ -125,7 +125,7 @@ A: a character is a *number* (or *character code*) that stands for a *symbol*.
 
 * ASCII only goes from 0 to 127
 * Unicode is the same as ASCII for values from 0 and 127
-    * but Unicode goes a *lot* higher
+    * but Unicode goes **a lot** higher
 * Currently more than 130,000 characters, including symbols for
   * 139 modern and historic scripts
   * accents and other diacritics
@@ -158,7 +158,7 @@ false
 true
 ```
 
-> Strings are compared *one character at a time* using the *Unicode values* of each character.
+> Strings are compared **one character at a time** using the **Unicode values** of each character.
 
 # Comparing Strings: Example
 

@@ -26,23 +26,23 @@
 
 # Input and Output
 
-* Computers have many senses -- keyboard, mouse, network card, camera, joystick, etc. Collectively, these are called **INPUT**.
+* Computers have many senses -- keyboard, mouse, network card, camera, joystick, etc. Collectively, these are called **Input**.
 
-* Computers can also express themselves in many ways -- text, graphics, sound, networking, printing, etc. Collectively, these are called **OUTPUT**.
+* Computers can also express themselves in many ways -- text, graphics, sound, networking, printing, etc. Collectively, these are called **Output**.
 
 * Input and Output together are called **I/O**.
 
-* the only part of your laptop that is *really* a computer is the CPU and the RAM; all the other parts (keyboard, trackpad, display, disk drive, etc.) are technically I/O devices 
+* the only part of your laptop that is **really** a computer is the CPU and the RAM; all the other parts (keyboard, trackpad, display, disk drive, etc.) are technically I/O devices 
 
 # Memory vs I/O
 
-* Performing *calculations* and accessing *memory* is **very fast**
+* Performing calculations and accessing memory is **very fast**
 * ...but reading and writing to I/O devices is **slow**
     * (at least as far as the CPU is concerned)
-    * I/O operations can take *seconds* or *milliseconds*; CPU operations take *nanoseconds*
-* Every time you ask JavaScript to do an I/O operation, it *pauses your program*
+    * I/O operations can take **seconds** or **milliseconds**; CPU operations take **nanoseconds**
+* Every time you ask JavaScript to do an I/O operation, it **pauses your program**
   * this allows the CPU to spend time doing other things, not just sitting idle waiting for a key to be pressed or a file to be written
-* In NodeJS, you have to write a function for JavaScript to run once it *resumes*
+* In NodeJS, you have to write a function for JavaScript to run once it **resumes**
     * this function is named an *asynchronous callback*
     * *asynchronous* is Greek for "out of time" or "not together in time"
 
@@ -94,7 +94,7 @@ process.stdin.once('data', printLine);
 ```
 
 The `printLine` function itself is called a *callback* 
-(since you are asking the I/O device to *call you back* when it receives input).
+(since you are asking the I/O device to **call you back** when it receives input).
 
 # LAB: Hello, friend!
 
@@ -120,14 +120,14 @@ What happens? Is this what you expected?
 * Uh-oh! We've got trouble... what is that exclamation point doing way down there?
 
 * The first thing to do is DON'T PANIC!
-* You are *totally* going to figure this out.
+* You are going to figure this out.
 * And even if you don't, you haven't actually broken anything.
 * In fact, it's really hard to break a computer just by typing, so stay calm.
 
 # Control-C to close
 
 * First things first: get back to the command line
-* This program doesn't *exit* yet, so you will need to *force* it to close
+* This program doesn't **exit** yet, so you will need to **force it to close**
 * Do this by holding down CONTROL and pressing C
     * abbreviated ⌃C or ^C or CTRL-C
 
@@ -143,12 +143,12 @@ What happens? Is this what you expected?
 * In addition to letters, numbers, and punctuation, computers also store other keys inside strings
 * Among these CONTROL CHARACTERS is the one that represents the RETURN KEY
 * This character's name is NEWLINE
-* Every time you read a line, the computer reads *all* the characters, *including the newline*!
+* Every time you read a line, the computer reads **all** the characters, **including the newline**!
 
 # Trim it
 
 * Fortunately, there's an easy fix
-* If you send the message `trim` to a string, it will remove all SPACES and NEWLINES from both ends
+* If you send the message `trim` to a string, it will remove all **spaces** and **newlines** from both ends
 
 # LAB: fixing Hello, Friend
 
@@ -229,10 +229,10 @@ function ask(questionText) {
 | code                                                        | explanation                                                                                                                             |
 |-------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
 | `const readline = require('readline');`                     | load the `readline` package and name it `readline`                                                                                      |
-| `const readlineInterface = readline.createInterface({...})` | create an *interface* to readline using the following settings:                                                                         |
-| `  process.stdin,`                                | for input, use the *standard input stream* (i.e. terminal keyboard input)                                                               |
-| `  process.stdout`                               | for output, use the *standard output stream* (i.e. terminal console output)                                                             |
-| `function ask(questionText) {...}`                          | a function named *ask* that uses the [Promise API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises) to asynchronously ask a question and wait for a reply |
+| `const readlineInterface = readline.createInterface({...})` | create an **interface** to readline using the following settings:                                                                         |
+| `  process.stdin,`                                | for input, use the **standard input stream** (i.e. terminal keyboard input)                                                               |
+| `  process.stdout`                               | for output, use the **standard output stream** (i.e. terminal console output)                                                             |
+| `function ask(questionText) {...}`                          | a function named **ask** that uses the [Promise API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises) to asynchronously ask a question and wait for a reply |
 
 (We will cover the Promise API in much more detail later; for now, all you really need to know is that Promises allow us to use `async` and `await` in the next slide.)
 

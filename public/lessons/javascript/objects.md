@@ -36,7 +36,7 @@ let abby = {
 }
 ```
 
-* This is called **object literal** syntax since it defines the object exactly as it's **written**.
+* This is called *object literal* syntax since it defines the object exactly as it's written.
 * The string on the left is called the *key*; the string on the right is called a *value*; the two together are called an *entry* or a *property*.
 * JavaScript object keys are always strings, but if the key has no spaces in it, you can omit the quotations
 * `let abby = {...}` is an assignment, setting the variable `abby` to point to the object we just defined
@@ -45,9 +45,9 @@ let abby = {
 
 An object is useful for putting many similar things together.
 
-Let's make an object that maps a state's *abbreviation* to its *full name*
+Let's make an object that maps a state's **abbreviation** to its **full name**
 
-*Type this in a NodeJS console*:
+Type this in a NodeJS console:
 
 ```javascript
 let states = {
@@ -60,7 +60,7 @@ let states = {
 
 # Getting Object Properties
 
-You can get the properties of an object with either *dots* or *brackets*:
+You can get the properties of an object with either **dots** or **brackets**:
 
 | With Dots   | With Brackets  | The Value         |
 |-------------|----------------|-------------------|
@@ -135,7 +135,7 @@ let items = {
 let item = 'brick'
 ```
 
-... two of the following expressions look for *a key named `item`*, but only one looks for a key named *the value of the variable named item*:
+... two of the following expressions look for **a key named `item`**, but only one looks for a key named **the value of the variable named item**:
 
 | code            | value       | explanation                         |
 |-----------------|-------------|-------------------------------------|
@@ -147,7 +147,7 @@ let item = 'brick'
 
 # An Object is a Data Structure
 
-Objects are good for a lot more than mere one-to-one maps. They allow you to design *data structures* that are as complicated and as deeply nested as you can imagine...
+Objects are good for a lot more than mere one-to-one maps. They allow you to design **data structures** that are as complicated and as deeply nested as you can imagine...
 
 ```javascript
 let alice = {
@@ -195,7 +195,7 @@ Here's a way to loop through every property in an object.
 This `for..in` loop grabs every property in the `states` object, 
 one at a time,
 and inside the loop,
-sets the `state` value to that property's *key*
+sets the `state` value to that property's **key**
 
 ```js
 for (let state in states) {
@@ -222,7 +222,7 @@ for (let state in states) {
 
 **Note:** use "`for...of`" for arrays, use "`for...in`" for objects -- see [this article](https://bitsofco.de/for-in-vs-for-of/) for more detail about **of** vs. **in**.
 
-**WARNING:** remember the `let` or you will be defining a *global variable* named `state`
+**WARNING:** remember the `let` or you will be defining a **global variable** named `state`
 
 # LAB: Class GPA
 
@@ -429,7 +429,7 @@ console.log("Your order total is $" + orderPrice)
 
 Here's a taste of [object instance methods](./methods).
 
-A method is a *function* attached to an *object* as a *property*.
+A method is a **function** attached to an **object** as a **property**.
 
 ```js
 let stringUtils = {

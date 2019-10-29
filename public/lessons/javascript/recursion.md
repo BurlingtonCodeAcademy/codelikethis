@@ -8,7 +8,7 @@
 
 # Recursion
 
-*recursion* is when a function *calls itself*
+*recursion* is when a function calls itself
 
 ![ouroboros](/images/ouroboros.jpg)
 
@@ -68,7 +68,7 @@ countdown(10);
 
 Put the above in a source file called `countdown.js` and try it now. 
 
-Note that you *must change* the value; otherwise you will recurse forever.
+Note that you **must change** the value; otherwise you will recurse forever.
 
 # Exercise: Draw It Out
 
@@ -86,7 +86,7 @@ Fill out the cells of the following table for the call `countdown(5)`:
 
 # Recursion is Reduction
 
-In addition to the base case, a recursive function needs to define at least one other case; this case *wraps around* the base case like a Russian doll.
+In addition to the base case, a recursive function needs to define at least one other case; this case **wraps around** the base case like a Russian doll.
 
 ![matryoshka](/images/matryoshka.jpg)
 
@@ -94,7 +94,7 @@ You can think of a recursive function as starting with a large problem, and grad
 
 Since the base case has a known solution, every other step can then be built back up on top of it -- which is why it's called the *base*.
 
-In this way, recursion is an example of the *divide and conquer* approach to problem-solving.
+In this way, recursion is an example of the **divide and conquer** approach to problem-solving.
 
 <small>(image source: [wikipedia, public domain](https://en.wikipedia.org/wiki/Matryoshka_doll#/media/File:First_matryoshka_museum_doll_open.jpg))</small>
 

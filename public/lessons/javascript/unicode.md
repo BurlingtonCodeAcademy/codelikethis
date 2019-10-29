@@ -2,7 +2,7 @@
 
 Q: A string is "a series of characters"... but what is a character?
 
-A: a character is a *number* (or *character code*) that stands for a *symbol*.
+A: a character is a *number* (or *character code*) that stands for a **symbol**.
 
 |symbol|code|name|
 |---|---|---|
@@ -13,7 +13,7 @@ A: a character is a *number* (or *character code*) that stands for a *symbol*.
 | `a` | 97 | lowercase A |
 | ??? | 10 | newline |
 
-(Some characters stand for *unprintable* symbols like `newline` or `tab` or `bell`.)
+(Some characters stand for **unprintable** symbols like `newline` or `tab` or `bell`.)
 
 # ASCII and ye shall receive-ski
 
@@ -39,8 +39,8 @@ A: a character is a *number* (or *character code*) that stands for a *symbol*.
 
 JavaScript strings are Unicode
 
-  * technically, JS uses the *UTF-16 encoding* in memory
-  * and the *UTF-8 encoding* for text files
+  * technically, JS uses the **UTF-16 encoding** in memory
+  * and the **UTF-8 encoding** for text files
 
 That means you can use emoji in your JavaScript programs!
 
@@ -66,13 +66,13 @@ Like this:
 
 # Unicode Encodings
 
-* UTF-32 is a *fixed-width encoding* for Unicode
+* UTF-32 is a **fixed-width encoding** for Unicode
   * every character is 32 bits long
-* UTF-8 is a *variable-width encoding* for Unicode
+* UTF-8 is a **variable-width encoding** for Unicode
   * all ASCII characters are one byte long (8 bits)
   * other characters are up to four bytes long (32 bits)
   * used for text files
-* UTF-16 is a *variable-width encoding* for Unicode
+* UTF-16 is a **variable-width encoding** for Unicode
   * every character is either 16 or 32 bits long
   * used by JavaScript at runtime
 

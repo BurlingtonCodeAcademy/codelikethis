@@ -46,8 +46,6 @@ Q: What if there was a "left turn ok" green light as well?
 
 # State Machine Example: GUI Button
 
-[TODO: picture(s) of MacOS button]
-
 States:
 
 1. Enabled
@@ -75,11 +73,11 @@ We may also need a state transition *action*: "when the button enters the 'activ
 2. Predicability
 3. Fail-fast debugging
 
-* Many bugs are due to the system receiving unexpected input, or input that is inappropriate *at the moment*
+* Many bugs are due to the system receiving unexpected input, or input that is inappropriate **at the moment**
   * (it's like rai-ee-ain on your wedding day)
-* an "illegal state transition" error means something unexpected *just* happened
+* an "illegal state transition" error means something unexpected **just** happened
   * so you may need to add a new transition or state (or validation routine, or error handler) to handle it when it happens again
-* Without a state machine, the system may remain in an invalid state for some time, making it harder to debug once something eventually *does* break
+* Without a state machine, the system may remain in an invalid state for some time, making it harder to debug once something eventually **does** break
 
 # State of the State
 

@@ -10,21 +10,21 @@ API doc: <https://docs.cypress.io/api>
 
 # Cypress Features
 
-* *consistency* and *speed* via Electron and NodeJS architecture
-* *waiting* built in to every command and assertion
-* *spies, stubs, and clocks* for fine-grained control of external systems and dependent objects
-* *network stubs* with `cy.route()` for canned scenarios involving server failures or edge cases
-* *screenshots* for each failure; *videos* of entire test run (optionally)
-* tests are paused immediately on failure, for *debugging* live app state with DevTools
-* tests are written in *modern JavaScript* using a Jasmine/Jest-like interface and Mocha assertions
+* **consistency** and **speed** via Electron and NodeJS architecture
+* **waiting** built in to every command and assertion
+* **spies, stubs, and clocks** for fine-grained control of external systems and dependent objects
+* **network stubs** with `cy.route()` for canned scenarios involving server failures or edge cases
+* **screenshots** for each failure; **videos** of entire test run (optionally)
+* tests are paused immediately on failure, for **debugging** live app state with DevTools
+* tests are written in **modern JavaScript** using a Jasmine/Jest-like interface and Mocha assertions
 
 # Cypress Anti-Features
 
-Cypress is *not* an after-the-fact click-and-record QA automation tool for so-called "non-technical" testers.
+Cypress is **not** an after-the-fact click-and-record QA automation tool for so-called "non-technical" testers.
 
- * tests are written in *modern JavaScript* so your testers need to understand callbacks, method chaining, jQuery, Mocha and Chai, and fat arrows, as well as CSS selectors and DOM lifecycle events
+ * tests are written in **modern JavaScript** so your testers need to understand callbacks, method chaining, jQuery, Mocha and Chai, and fat arrows, as well as CSS selectors and DOM lifecycle events
 
- * tests use an *enqueued linear control flow* so some familiar techniques like `if..then` and `let` variables don't work as expected
+ * tests use an **enqueued linear control flow** so some familiar techniques like `if..then` and `let` variables don't work as expected
    * fortunately the docs are **amazing** and cover these scenarios very well
 
  * tests use CSS selectors to find page elements, so your app needs to be written with sensible `id`s and `class`es and `data-*` values in its DOM
@@ -89,7 +89,7 @@ cy.visit('/cart')
 
 * attempts to load the path `/cart` from the local server
 
-* waits up to 60 seconds for the page to fire its `load` event (which happens *just after* the page is fully loaded)
+* waits up to 60 seconds for the page to fire its `load` event (which happens **just after** the page is fully loaded)
 
 * if you specify `baseUrl` in your `cypress.json` file it will go a little quicker, e.g.:
 
@@ -105,10 +105,10 @@ cy.visit('/cart')
 cy.get('#someId')
 ```
 
-* takes a *CSS selector*
-* *waits up to 10 seconds* for the selector to match an element on the page
-* and *if a match is eventually found*,
-* returns a *cypress wrapper* (aka *Chainer*) for the matching element(s)
+* takes a **CSS selector**
+* **waits up to 10 seconds** for the selector to match an element on the page
+* and **if a match is eventually found**,
+* returns a **cypress wrapper** (aka **Chainer**) for the matching element(s)
 * that accepts further commands (like `type` and `submit` below)
 
 ```js
@@ -137,7 +137,7 @@ see <https://docs.cypress.io/guides/core-concepts/interacting-with-elements.html
 
 * `cy.get(selector).contains('some text')`
   * checks each individual element that `cy.get` matched
-  * succeeds if *any* contain the given text
+  * succeeds if **any** contain the given text
   * fails if the given text is not found after 10 seconds
   * returns a "chainer" for all matching elements, so you can do further assertions or refinements
 
@@ -148,7 +148,7 @@ cy.get('h2')
   .contains('New York')
 ```
 
-* `cy.contains(` without a preceding `get` checks the *entire page* for the given text
+* `cy.contains(` without a preceding `get` checks the **entire page** for the given text
 
 # built-in assertions
 
@@ -173,9 +173,9 @@ Sometimes the built-in assertions are enough, but often you need to test the pag
 
 Cypress's [`should`](https://docs.cypress.io/api/commands/should.html) method lets you use *Chai assertions* on the element(s) matched by `get`.
 
-> Note: Chai assertions are slightly different from *Jest assertions*, so beware of small syntax differences.
+> Note: Chai assertions are slightly different from **Jest assertions**, so beware of small syntax differences.
 
-Using `should` on a chainer, you specify the Chai assertion *as a string*; `should` will execute that assertion repeatedly *on the target element* until it becomes true.
+Using `should` on a chainer, you specify the Chai assertion **as a string**; `should` will execute that assertion repeatedly **on the target element** until it becomes true.
 
 ```js
 cy.get('input[name="firstName"]')
@@ -190,13 +190,13 @@ Here’s a list of commonly used Cypress assertions, with sample code: <https://
 
 Cypress commands don’t do anything at the moment they are invoked, but rather enqueue themselves to be run later...
 
-... **after** the entire test function has *already finished executing*!
+... **after** the entire test function has **already finished executing**!
 
-`cy.get` returns a wrapper object called a "chainer", and at the time it is returned, *nothing in the web page has happened yet*, so you can't simply store the result in a variable or print it
+`cy.get` returns a wrapper object called a "chainer", and at the time it is returned, **nothing in the web page has happened yet**, so you can't simply store the result in a variable or print it
 
 (For that level of control you must [pass callbacks into](https://docs.cypress.io/api/commands/should.html#Function) other methods like `should` and `each` and `and` and `then`.)
 
-This may seem overcomplicated, but it is *by design*. Commands are enqueued and managed by Cypress to reduce timing issues and general test flakiness.
+This may seem overcomplicated, but it is **by design**. Commands are enqueued and managed by Cypress to reduce timing issues and general test flakiness.
 
 # timeout
 
@@ -222,13 +222,13 @@ cy.get('div#preview').then((element) => {
 });
 ```
 
-* **Warning:** the `element` parameter is a *jQuery object* that wraps the native DOM element(s)
+* **Warning:** the `element` parameter is a **jQuery object** that wraps the native DOM element(s)
 
 # multiple matches
 
 * if `cy.get()` matches more than one element, things get weird
     * `.contains(` checks each individual element and succeeds if *any* contain the text
-    * `should('have.text'` checks the *full combined text* of *all* matched elements
+    * `should('have.text'` checks the **full combined text** of **all** matched elements
     * `.then(` hands you a jQuery collection with more than one item in it
 
 For example, given this HTML:
@@ -250,9 +250,9 @@ For example, given this HTML:
 
 Fortunately, there is `each`
 
-* `.each(` runs your callback on *all* matching elements, one at a time
+* `.each(` runs your callback on **all** matching elements, one at a time
 
-* this lets you write custom code to check (or "massage") each element separately, to assert that *all* (not just *any*) elements obey your assertion
+* this lets you write custom code to check (or "massage") each element separately, to assert that **all** (not just **any**) elements obey your assertion
 
 | cypress code | result |
 |---|---|
@@ -303,7 +303,7 @@ it.skip('does something interesting that is not coded yet', function () {})
 
 Sometimes an error message is not enough, and you need to pause and inspect the DOM, or other application state.
 
-Cypress saves *DOM snapshots* for every command, so normally all you need to do is click the line in the log panel, then inspect the window visually or with Chrome DevTools.
+Cypress saves **DOM snapshots** for every command, so normally all you need to do is click the line in the log panel, then inspect the window visually or with Chrome DevTools.
 
 If you want more fine-grained breakpoints...
 
@@ -323,7 +323,7 @@ cy.get('button').click()
 
 # LAB: Tic Tac Test (part 1)
 
-* on GitHub, find a [Tic Tac Toe](/projects/tic_tac_toe_www) app that was written by *someone else* and copy its git URL
+* on GitHub, find a [Tic Tac Toe](/projects/tic_tac_toe_www) app that was written **by someone else** and copy its git URL
 * locally clone that repo, e.g.
 
 ```sh
@@ -371,7 +371,7 @@ describe('Cypress', function () {
 npx node-static .
 ```
 
-* in a *different* console window, run Cypress:
+* in a **different** console window, run Cypress:
 
 ```sh
 npx cypress open

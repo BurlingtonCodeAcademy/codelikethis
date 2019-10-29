@@ -13,7 +13,7 @@
 
 # Stack
 
-* a *stack* is a *metaphor* for a physical stack
+* a *stack* is a **metaphor** for a physical stack
 
 ![pancakes](/images/pancakes.jpg)
 
@@ -24,9 +24,9 @@
 
 # What makes a stack a stack
 
-* a *stack* is an *abstract data type* with only two operators
-    * **push** adds an item to the top
-    * **pop** removes an item from the top
+* a *stack* is an **abstract data type** with only two operators
+    * *push* adds an item to the top
+    * *pop* removes an item from the top
 * a stack is a LIFO (last in, first out) structure
     * you take things off the top of the stack in the **reverse** order from which you put them on
     * contrast with a *queue*, which is FIFO (first in, first out)
@@ -56,7 +56,7 @@ The theme of "Freedom of Constraints" is important in software design.
 
 # Arrays vs. Stacks
 
-In JavaScript, the easiest way to *implement* a stack is by using an *array*.
+In JavaScript, the easiest way to **implement** a stack is by using an **array**.
 
 In fact, every array already knows how to `push` and `pop`.
 
@@ -74,7 +74,7 @@ fruit                     // 'cherry'
 fruits                    // [ 'apple', 'banana' ]
 ```
 
-Note that after a `pop`, the stack's contents are *changed*. Pop *removes and returns* the final value from the array.
+Note that after a `pop`, the stack's contents are **changed**. Pop **removes and returns** the final value from the array.
 
 # Stack Trace
 

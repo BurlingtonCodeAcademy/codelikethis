@@ -51,7 +51,7 @@ var Circle = function(radius) {
 ```javascript
 var Circle = function(radius) {
     this.radius = function(r) {
-        if (typeof(r) == 'undefined') {
+        if (typeof r === 'undefined') {
             return radius;
         } else {
             radius = r;

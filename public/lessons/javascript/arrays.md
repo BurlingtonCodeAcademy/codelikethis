@@ -7,7 +7,7 @@
 
 # Arrays
 
-* An ARRAY is a CONTAINER
+* An *array* is a container
   * an object that contains other objects
 * It's a list of objects
 
@@ -24,7 +24,7 @@
 ["apple", "banana", "cherry"]
 ```
 
-square brackets on their own mean "please go *create* an array now"
+square brackets on their own mean "please go **create** an array now"
 
 and put these 3 other values inside it
 
@@ -67,11 +67,11 @@ So the first item in an array is number zero, not number one.
 
 # Length
 
-Every array has a *property* named `length`
+Every array has a **property** named `length`
 
 ```js
 let fruits = ["apple", "banana", "cherry"]
-fruits.length //=> 3
+fruits.length // => 3
 ```
 
 Q: How can you get the last item in an array... even if you don't know its index beforehand?
@@ -97,7 +97,7 @@ Why or why not?
 
 # Undefined means 🤷
 
-by returning *undefined*, the computer is answering the question
+by returning **undefined**, the computer is answering the question
 
 > "What is the 99th item?"
 
@@ -118,15 +118,15 @@ There are many methods here and you should not try to memorize them all. But ski
 ```javascript
 let fruits = ["apple", "banana", "cherry"]
 fruits.push("pineapple")
-fruits //=> ["apple", "banana", "cherry", "pineapple"]
+fruits // => ["apple", "banana", "cherry", "pineapple"]
 ```
 
 * **push** can also add several values at once
 
 ```javascript
 fruits.push("nectarine", "strawberry")
-fruits //=> ["apple", "banana", "cherry", "pineapple", "nectarine", "strawberry"]
-````
+fruits // => ["apple", "banana", "cherry", "pineapple", "nectarine", "strawberry"]
+```
 
 # Yarra Lasrever
 
@@ -145,10 +145,10 @@ you can `slice` an array to cut it into smaller arrays
 let fruits = ['apple', 'banana', 'cherry', 'date', 'elderberry']
 
 // this means "slice from item 1 to item 3"
-fruits.slice(1, 3) //=> [ 'banana', 'cherry' ]
+fruits.slice(1, 3) // => [ 'banana', 'cherry' ]
 
 // this means "slice from item 2 to the end"
-fruits.slice(2) //=> [ 'cherry', 'date', 'elderberry' ]
+fruits.slice(2) // => [ 'cherry', 'date', 'elderberry' ]
 ```
 
 These start and end numbers are called *indexes* (or *indices* if you're feeling fancy).
@@ -161,7 +161,7 @@ Humans like to start counting at 1, but computers like to start counting at 0.
 
 This can be confusing, so here's a visualization to help explain it.
 
-Think of the indexes as pointing at the *spaces between* items, as in this diagram:
+Think of the indexes as pointing at the **spaces between** items, as in this diagram:
 
     ['B', 'L', 'U', 'E']
 
@@ -170,12 +170,12 @@ Think of the indexes as pointing at the *spaces between* items, as in this diagr
 
 So with this picture in your mind, imagine that `slice`...
 
-   * includes the item to the *right* of the start index
-   * includes the item to the *left* of the end index...
-   * ...but *excludes* the item to the *right* of the end index
+   * includes the item to the **right** of the start index
+   * includes the item to the **left** of the end index...
+   * ...but **excludes** the item to the **right** of the end index
 
 ```javascript
-['B', 'L', 'U', 'E'].slice(1, 3) //=> [ 'L', 'U' ]
+['B', 'L', 'U', 'E'].slice(1, 3) // => [ 'L', 'U' ]
 ```
 
 # Array to String
@@ -183,10 +183,10 @@ So with this picture in your mind, imagine that `slice`...
 There are a few easy ways to turn an array into a string.
 
 ```js
-fruits.join()           // 'apple,banana,cherry'
-fruits.join(" and ")    // 'apple and banana and cherry'
-fruits.toString()       // 'apple,banana,cherry'
-fruits.toSource()       // [ 'apple', 'banana', 'cherry' ]
+fruits.join()           // => 'apple,banana,cherry'
+fruits.join(" and ")    // => 'apple and banana and cherry'
+fruits.toString()       // => 'apple,banana,cherry'
+fruits.toSource()       // => [ 'apple', 'banana', 'cherry' ]
 ```
 
 Note that `console.log` uses `toSource()`, which is usually better for debugging than `toString`...
@@ -195,18 +195,18 @@ Note that `console.log` uses `toSource()`, which is usually better for debugging
 
 # String to Array
 
-You can also easily turn a string into an array.
+You can also easily turn a string into an array using the `.split()` method.
 
 ```javascript
-'dog'.split('') //=> ['d', 'o', 'g']
-'my dog has fleas'.split(' ') //=> [ 'my', 'dog', 'has', 'fleas' ]
+'dog'.split('') // => ['d', 'o', 'g']
+'my dog has fleas'.split(' ') // => [ 'my', 'dog', 'has', 'fleas' ]
 ```
 
 # Loops and Iterators
 
 There are many ways to "iterate" through an array.
 
-This means to go through the entire array, one item at a time, usually in order, and then *do something* with each individual item.
+This means to go through the entire array, one item at a time, usually in order, and then **do something** with each individual item.
 
 In the next slides we will illustrate 3 different ways to iterate... one way is explicit, one way is concise, and one way is fancy.
 
@@ -223,12 +223,12 @@ for (let i=0; i < fruits.length; i++) {
 |phrase|meaning|
 |---|---|
 | `for`                    | in a loop, |
-| `let i`                  | make an *index* variable named `i` |
+| `let i`                  | make an **index** variable named `i` |
 | `i=0`                    | and initially set it to `0` |
 | `i < fruits.length`      | then, as long as `i` is less than the number of `fruits` |
 | `{` ... `}`              | execute this block of code |
 | `console.log(fruits[i])` | print the `i`th element of the `fruits` array |
-| `i++`                    | and then *increment* `i` before the next time through |
+| `i++`                    | and then **increment** `i` before the next time through |
 
 # Concise: Looping through an array with for-of
 
@@ -249,7 +249,7 @@ for (let fruit of fruits) {
 
 # Fancy: Looping through an array with forEach
 
-`forEach` is an [iteration method](./iteration-methods) that behaves a lot like `for..of` but in a *[functional style](hybrid-styles)* :
+`.forEach()` is an [iteration method](./iteration-methods) that behaves a lot like `for..of` but in a *[functional style](hybrid-styles)* :
 
 ```js
 fruits.forEach( (fruit) => {
@@ -285,23 +285,23 @@ write a program that prints:
 
 The `[]` operator works for assignment as well.
 
-`fruits[0] = 'apricot'` will set the `0`th item of the array to the string `'apricot'`
+`fruits[0] = 'apricot'` will set the `0`th item of the array `fruits` to the string `'apricot'`
 
 # Checking every item in an array
 
 The `includes` method checks if a given value is inside an array (or not).
 
 ```js
-fruits.includes("apple")   // true
+fruits.includes("apple")   // => true
 
-fruits.includes("pizza")   // false
+fruits.includes("pizza")   // => false
 ```
 
-Remember, here we are sending a message *to an array*, asking if it includes a certain *string*.
+Remember, here we are sending a message **to an array**, asking if it includes a certain **string**.
 
 # LAB: enemies list refactoring
 
-Refactoring is changing existing code so that it *works* the same, but is cleaner and easier to read.
+*Refactoring* is changing existing code so that it **works** the same, but is cleaner and easier to read.
 
 In your old `hello.js` program you had an `if` statement to check if someone is your enemy. Something like:
 

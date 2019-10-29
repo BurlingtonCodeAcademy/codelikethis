@@ -11,29 +11,29 @@
 
 # Scope
 
-*scope* = all the variables and functions that are *visible* from a given location in your code
+*scope* refers to all the variables and functions that are **visible** from a given location in your code
 
 The two primary forms of scope are *Global* and *Local*
 
-**Globally scoped** variables can be seen from *anywhere* in the program
+*Globally scoped* variables can be seen from **anywhere** in the program
 
-**Locally scoped** variables can be seen only *nearby* where they are defined -- usually inside the same *function* or *code block*
+*Locally scoped* variables can be seen only **nearby** where they are defined -- usually inside the same **function** or **code block**
 
 # Global Scope
 
-If you declare a variable without a keyword (`var`, `let`, `const`) then it is a **global variable** and can be seen and used by *any line of code in your entire program*
+If you declare a variable without a keyword (`var`, `let`, `const`) then it is a **global variable** and can be seen and used by **any line of code in your entire program**
 
-Global variables are very useful but also very dangerous. A mistake in *any part* of your program using a global variable could introduce a bug in *any other part* of your program using that global variable.
+Global variables are very useful but also very dangerous. A mistake in **any part** of your program using a global variable could introduce a bug in **any other part** of your program using that global variable.
 
 (ES5 introduced [strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode) which can reduce this risk -- though not eliminate it entirely)
 
 # Implicit vs. Explicit globals
 
-Globals are usually bad, but they are good for when you want to call a particular function from *literally anywhere* in your code... for instance, when you want to tell your analytics server that something interesting just happened.
+Globals are usually bad, but they are good for when you want to call a particular function from **literally anywhere** in your code... for instance, when you want to tell your analytics server that something interesting just happened.
 
 If you really want to use a global variable, you should do so explicitly, so other readers of your code will know that you did it intentionally.
 
-JavaScript programs have a *global object* whose properties are available as global variables. In web browsers, the global object is named `window`; in NodeJS, the global object is named `global`.
+JavaScript programs have a **global object** whose properties are available as global variables. In web browsers, the global object is named `window`; in NodeJS, the global object is named `global`.
 
 ```javascript
 // implicitly global
@@ -58,7 +58,7 @@ Mr. Bean -- in the interrogation room scope -- can't see the cops in the observa
 
 # Block Scope
 
-`let` and `const` are *block*-scoped: any block of code surrounded by `{` curly braces `}` can have its own set of local `let` variables
+`let` and `const` are *block-scoped*: any block of code surrounded by `{` curly braces `}` can have its own set of local `let` variables
 
 ```javascript
 let name = 'Mr. Bean';
@@ -72,7 +72,7 @@ let name = 'Mr. Bean';
 console.log(name);
 ```
 
-If a variable name can't be found in the *current* scope, then JavaScript looks in the *next outer scope*, and so on
+If a variable name can't be found in the **current scope**, then JavaScript looks in the **next outer scope**, and so on.
 
 # Exercise: Guess the Variable
 
@@ -119,15 +119,15 @@ console.log(name);      // prints "Alice"
 
 ```javascript
 let opinion = 'i love cheese';
-console.log(rant(opinion));
+console.log(strongOpinion(opinion));
 
-function rant(message) {
+function strongOpinion(message) {
     let loudMessage = message.toUpperCase() + '!!';
     return loudMessage;
 }
 ```
 
-the above `rant` function has *two* locally scoped variables:
+the above `strongOpinion` function has **two** locally scoped variables:
 
 * the local variable `loudMessage`
 * the parameter `message`
@@ -170,7 +170,7 @@ console.log(x);  // ReferenceError: x is not defined
 
 # Closure Scope
 
-JavaScript also supports *lexical scope* (aka "closure scope" or "nested scope") which means that variables defined *above* the current function may also be visible...
+JavaScript also supports *lexical scope* (aka *closure scope* or *nested scope*) which means that variables defined **above** the current function may also be visible...
 
 ```javascript
 function sing() {               // outer function
@@ -190,19 +190,19 @@ function sing() {               // outer function
 }
 ```
 
-`bottlesOfBeer` is **enclosed** within `sing`, so it *inherits* `sing`'s scope
+`bottlesOfBeer` is **enclosed** within `sing`, so it **inherits** `sing`'s scope
 
 `numberOfBottles` is visible inside **both** `sing()` **and** `bottlesOfBeer()`
 
 # Nested Scopes
 
-Every time you call a function, JS creates a *new scope*
+Every time you call a function, JS creates a **new scope**
 
-that scope *points to* the current scope
+that scope **points to** the current scope
 
 and so on recursively
 
-(and -- strangely enough -- variables that are defined inside a nested function are *still alive* after that function returns (?!?!?!) -- more on this at the very end of this lesson)
+(and -- strangely enough -- variables that are defined inside a nested function are **still alive** after that function returns (?!?!?!) -- more on this at the very end of this lesson)
 
 # Why Nested Scopes? 1
 
@@ -218,7 +218,7 @@ function countLetters(words) {
 }
 ```
 
-`total` is visible inside the *inner* (callback) function as well as the outer (`countLetters`), so `forEach` can behave like other loops
+`total` is visible inside the **inner** (callback) function as well as the outer (`countLetters`), so `forEach` can behave like other loops
 
 ### This doesn't work:
 
@@ -233,11 +233,11 @@ function countLetters(words) {
     return letterCount;
 }
 ```
-...because `addLetterCount` is *not* nested inside `countLetters`
+...because `addLetterCount` is **not** nested inside `countLetters`
 
 # Why Nested Scopes? 2
 
-* nested functions, e.g. the following function accepts a *two-dimensional array* and prints each row
+* nested functions, e.g. the following function accepts a **two-dimensional array** and prints each row
 
 ```js
 function printGrid(grid, delimiter) {
@@ -257,7 +257,7 @@ function printGrid(grid, delimiter) {
 this is a contrived example, but the idea is that
 
 * you don't have to pass `delimiter` in to `printRow`, making your code a bit cleaner
-* you can *descriptively name* chunks of code as inner functions without "polluting the global namespace"
+* you can **descriptively name** chunks of code as inner functions without "polluting the global namespace"
 
 # Why Nested Scopes? 3
 
@@ -280,7 +280,7 @@ count() // returns 3
 value   // ReferenceError: value is not defined
 ```
 
-* we now have a *function* that contains its own persistent state
+* we now have a **function** that contains its own persistent state
   * sometimes called a *generator* or an *iterator*
   * **this is weird** since a normal function always returns the same value given the same input
-* the private variable `value` is *still alive* after the IIFE returns 😲
+* the private variable `value` is **still alive** after the IIFE returns 😲

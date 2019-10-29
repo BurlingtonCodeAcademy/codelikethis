@@ -5,9 +5,9 @@
 
 # Variables
 
-* A **variable** is a **name** for a value.
+* A *variable* is a **name** for a value.
 * You give a value a name using the **assignment** operator 
-    * It looks like an equal sign but is *not* a comparison.
+    * It looks like an equal sign but is **not** a comparison.
     * often preceded by `let` as in "Let there be light" or "Let X equal 10".
 
 ```js
@@ -27,13 +27,13 @@ fruit.toUpperCase() // "BERRY"
 # Let there be confusion
 
 * `let` is just one way to declare a variable in JavaScript
-* `var` is a lot like `let` but has wider *scope* which is sometimes bad
-* If you don't use either `let` or `var` then the variable becomes *global* (which is dangerous)
-* Moral: *always use let* unless you have a good reason not to
+* `var` is a lot like `let` but has wider **scope** which is sometimes bad
+* If you don't use either `let` or `var` then the variable becomes **global** (which is dangerous)
+* Moral: **always use let** unless you have a good reason not to
 
 # Don't let me down 
 
-Unfortunately, in JavaScript you can only use `let` once per variable name (in a given *scope*), otherwise you will get an error:
+Unfortunately, in JavaScript you can only use `let` once per variable name (in a given **scope**), otherwise you will get an error:
 
 ```js
 Identifier 'x' has already been declared
@@ -96,7 +96,7 @@ Some things to try:
 
 * assign your birth year to a variable, then calculate your current age in years
 * write a poem (with at least two lines) and assign it to a variable
-* print the poem to the console *with proper line formatting*
+* print the poem to the console **with proper line formatting**
 * assign your best friend's name to a variable
 * YELL YOUR BEST FRIEND'S NAME
 * get a new best friend
@@ -123,11 +123,11 @@ color = "black"    // 'black'
 color + fruit      // 'blackberry'
 ```
 
-*Reassignment* only changes the name of an object. It does *not* change the data inside the object.
+**Reassignment** only changes the name of an object. It does **not** change the data inside the object.
 
 This is analogous to removing a label from one box and placing it on a different box.
 
-**Tip:** Did you get an `Identifier 'color' has already been declared` error? Try again without the `let`, or restart your JavaScript console (in a Browser, Reload the page; in a Terminal, quit and relaunch `node`).
+>**Tip:** Did you get an `Identifier 'color' has already been declared` error? Try again without the `let`, or restart your JavaScript console (in a Browser, Reload the page; in a Terminal, quit and relaunch `node`).
 
 # Many pointers can point to the same thing
 
@@ -138,13 +138,13 @@ let snack = fruit
 
 ![snack-fruit](/images/snack-fruit.svg)
 
-After this both `snack` and `fruit` are *pointing* to the same *value*
+After this both `snack` and `fruit` are **pointing** to the **same value**
 
 This is analogous to placing two labels on the same box.
 
 # Return values are new
 
-Most messages return *new* values:
+Most messages return **new** values:
 
 ```js
 let fruit = "banana"
@@ -153,7 +153,7 @@ let snack = fruit.toUpperCase()
 
 ![fruit-banana-snack-banana](/images/fruit-banana-snack-banana.svg)
 
-`"banana"` and `"BANANA"` are two *different values* in memory. The original value is still sitting around and still pointed to by `fruit`.
+`"banana"` and `"BANANA"` are two **different values** in memory. The original value is still sitting around and still pointed to by `fruit`.
 
 # Changing Values
 
@@ -199,13 +199,13 @@ This is a problem. What's the solution?
 
 # Constants: Variables that Aren't Variable
 
-* the keyword `const` is just like `let`, but also *prevents reassignment*
+* the keyword `const` is just like `let`, but also **prevents reassignment**
 
 ```javascript
 const pi = 3.14159;
 ```
 
-* the value of a `const` is *constant* after it's been set once
+* the value of a `const` is **constant** after it's been set once
   * if you try to change it, you get an error
 
 ```javascript
@@ -213,13 +213,13 @@ pi = 7;
 TypeError: Assignment to constant variable.
 ```
 
-> WARNING: `const` prevents *reassignment* but does not prevent changing the *insides* of objects (like the dates in the previous slide).
+> WARNING: `const` prevents **reassignment** but does not prevent changing the **insides** of objects (like the dates in the previous slide).
 
 # Summary: Variables
 
 * variables are names for memory locations, which hold values
-* *declaring* a variable says what its *scope* is
-* *assigning* a variable changes which location it points to
+* **declaring** a variable says what its **scope** is
+* **assigning** a variable changes which location it points to
 * you can have many names for the same location
 * sometimes values can change on the inside of a location
   * (which is useful but could cause bugs)

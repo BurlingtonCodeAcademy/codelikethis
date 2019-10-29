@@ -2,10 +2,10 @@
 
 JavaScript Object Notation
 
-* a *proper subset* of JavaScript
+* a **proper subset** of JavaScript
 * basically, it's plain JavaScript without functions or variables
   * (or comments, or single-quoted strings, or a few other limitations)
-* used for data *sans* behavior
+* used for data **without** behavior
   * saving/loading to disk or database
   * transmitting information across network
 
@@ -82,8 +82,8 @@ whose IDs member is an array of numbers.
 
 # Viewing JSON in NodeJS Console
 
-* JSON *is* JavaScript
-* so if you _copy_ a JSON blob and _paste_ it into the Node REPL
+* JSON **is** JavaScript
+* so if you **copy** a JSON blob and **paste** it into the Node REPL
 * it will look like this:
 
 ```

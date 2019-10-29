@@ -13,9 +13,9 @@
 
 # Functions
 
-Remember that a **variable** is a **name** for a piece of data
+Remember that a *variable* is a **name** for a piece of data
 
-A **function** is the **name** for a piece of code
+A *function* is the **name** for a piece of code
 
 ## Why would you want to name a chunk of code?
 
@@ -58,7 +58,7 @@ add(12, 30) // returns 42
 
 # Lab: One Nation, Divisible
 
-One number is *divisible* by another if you divide them and the *remainder* is 0.
+One number is *divisible* by another if you divide them and the **remainder** is 0.
 
 Write a function called `divisible` that takes two numbers, and returns `true` if the first number is divisible by the second number, and `false` otherwise.
 
@@ -129,7 +129,7 @@ function shouter(someString) {
 shouter('i like pizza');  => 'I LIKE PIZZA!!!'
 ```
 
-The variable `loudString` is called a **local variable** and can only be used **inside** the function.
+The variable `loudString` is called a *local variable* and can only be used **inside** the function.
 
 # Lab: Capitalize
 
@@ -189,7 +189,7 @@ console.log(capitalize('smith'));
 console.log(capitalize('MACGUYVER'));
 ```
 
-The variables `firstLetter` and `restOfWord` are called *local variables* and can only be used *inside* the `capitalize` function.
+The variables `firstLetter` and `restOfWord` are called *local variables* and can only be used **inside** the `capitalize` function.
   </div>
 
 
@@ -197,7 +197,7 @@ The variables `firstLetter` and `restOfWord` are called *local variables* and ca
 
 # Passing Variables to Functions
 
-When you pass a *variable* to a function, that variable's *value* is assigned to a *parameter*.
+When you pass a **variable** to a function, that variable's **value** is assigned to a **parameter**.
 
 > The variable and parameter names **do not** need to match!
 

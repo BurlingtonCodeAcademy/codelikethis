@@ -20,7 +20,7 @@ Overview:
 
 # What is Debugging?
 
-Debugging is fixing code that you *thought* was working... but *isn't* working.
+Debugging is fixing code that you **thought** was working... but **isn't** working.
 
 It's solving a puzzle that you created for yourself.
 
@@ -30,8 +30,8 @@ This can be frustrating! It can also be rewarding, and can lead to better unders
 
 Roughly speaking, there are two scenarios for debugging:
 
-1. **failures**: the program runs to completion, but gives an *incorrect* or *unexpected* result
-2. **errors**: the program *exits* with an error message
+1. *failures*: the program runs to completion, but gives an **incorrect** or **unexpected** result
+2. *errors*: the program **exits** with an error message
 
 # Debugging Failures
 
@@ -49,7 +49,7 @@ Debugging is an art, not a science. But its principles are scientific:
 
 # Debugging with Print Statements
 
-The most fundamental way to debug is to *print* the values of variables at various points in your code.
+The most fundamental way to debug is to **print** the values of variables at various points in your code.
 
 ```js
 function factorial(x) {
@@ -66,7 +66,7 @@ function factorial(x) {
 
 Keep adding print statements until you find an anomaly; repeat until you find the source.
 
-> Don't forget to *remove* the print statements after you've fixed the bug!
+> Don't forget to **remove** the print statements after you've fixed the bug!
 
 # Debugging with Print Statements
 
@@ -92,7 +92,7 @@ x<1
 # Breakpoints
 
 A 'breakpoint' is a location in your code where you tell the program "Stop! And wait for me to tell you to continue."
-Break points can are an integral part of any debugging tool and allow you to step through your code line by line (or chunk to chunk) to figure out *exactly* where things went wrong
+Break points can are an integral part of any debugging tool and allow you to step through your code line by line (or chunk to chunk) to figure out **exactly** where things went wrong
 
 # Browser Tools
 

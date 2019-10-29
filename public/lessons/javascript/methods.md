@@ -4,7 +4,7 @@
 
 # Object Instance Methods
 
-A method is a *function* attached to an *object* as a *property*.
+A *method* is a **function** attached to an **object** as a **property**.
 
 ```js
 let stringUtils = {
@@ -12,17 +12,17 @@ let stringUtils = {
     return word.charAt(0).toUpperCase() +
       word.slice(1).toLowerCase();
   },
-  rant: function(opinion) {
+  strongOpinion: function(opinion) {
     return option.toUpperCase() + '!!!';
   }
 }
 
-stringUtils.rant('i love pizza') //=> 'I LOVE PIZZA!!!'
+stringUtils.strongOpinion('i love pizza') // => 'I LOVE PIZZA!!!'
 ```
 
 # Methods Can Access Object State
 
-`this` is a magic word that means "this object I'm in *right now*"
+`this` is a magic word that means "this object I'm in **right now**"
 
 ```js
 let rectangle = {
@@ -33,14 +33,14 @@ let rectangle = {
     }
 }
 
-rectangle.height   //=> 10
-rectangle.area()   //=> 80
+rectangle.height   // => 10
+rectangle.area()   // => 80
 ```
 
 # Extending objects on the fly
 
-Since JavaScript is a *dynamic* language,
-you can add methods to *any object*.
+Since JavaScript is a *dynamic language*,
+you can add methods to **any object**.
 
 
 ```js
@@ -58,8 +58,8 @@ rectangle.area = function() {
 rectangle.area()   //=> 80
 ```
 
-* remember, `this` means "this object I'm in *right now*" which in this case is the rectangle
-* `this.height` on the *inside* of the object means the same as `rectangle.height` on the *outside*
+* remember, `this` means "this object I'm in **right now**" which in this case is the rectangle
+* `this.height` on the **inside** of the object means the same as `rectangle.height` on the **outside**
 
 # Lab: Speak
 
@@ -72,7 +72,7 @@ let dog = {
 }
 ```
 
-Please *add a method* to `dog` called `speak` so the following code:
+Please **add a method** to `dog` called `speak` so the following code:
 
 ```javascript
 console.log(dog.speak())
@@ -128,17 +128,17 @@ dog.speak = function() {
 
 # A Clever Trick: Extending System Classes
 
-You can add methods to *all objects of the same type* like this:
+You can add methods to **all objects of the same type** like this:
 
 ```js
-"banana".capitalize() //=> TypeError: "banana".capitalize is not a function
+"banana".capitalize() // => TypeError: "banana".capitalize is not a function
 
 String.prototype.capitalize = function() {
       return this.charAt(0).toUpperCase() +
         this.slice(1).toLowerCase();
     }
 
-"banana".capitalize() //=> "Banana"
+"banana".capitalize() // => "Banana"
 ```
 
 `String.prototype` is a special object whose properties (including methods!) are made available to **all strings**.
