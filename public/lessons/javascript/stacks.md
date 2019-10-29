@@ -152,14 +152,16 @@ series.push(a)
 
 ```js
 let series = [0, 1];
+
 while (series.length < 10) {
-    let b = series.pop();
     let a = series.pop();
+    let b = series.pop();
     let c = a + b;
-    series.push(a);
     series.push(b);
+    series.push(a);
     series.push(c);
 }
+
 console.log(series);
 ```
 

@@ -281,6 +281,41 @@ write a program that prints:
     BANANA
     APPLE
 
+# Loud Backwards Fruit Solution
+
+<details>
+<summary>Hint 1</summary>
+You can reverse an array by calling the `reverse` method on it
+<div>
+
+```js
+fruits.reverse()
+```
+
+</div>
+</details>
+
+<details>
+<summary>Hint 2</summary>
+Use an iterator such as a `for...of` loop or the `forEach` method to apply an operation to each element of an array.
+</details>
+
+<details>
+<summary>Solution</summary>
+<div>
+
+```js
+let fruits = ["apple", "banana", "cherry"]
+let reverseFruits = fruits.reverse()
+
+reverseFruits.forEach(function(fruit) {
+  console.log(fruit.toUpperCase())
+})
+```
+
+</div>
+</details>
+
 # Setting items in an array
 
 The `[]` operator works for assignment as well.
@@ -317,15 +352,27 @@ Please take a few minutes to **refactor** your old `hello.js` program to use arr
 # Enemies List solution
 
 <details>
+<summary>Hint</summary>
+Try storing your list of enemy names inside an array. Then you can check the name that was passed in against that array.
+<div>
+
+```js
+let enemiesArray = ["darth", "voldemort", "sauron"]
+```
+
+</div>
+</details>
+
+<details>
 <summary>Solution</summary>
 <div>
 
 ```js
-let enemiesArray = ["Darth", "Voldemort", "Sauron"]
+let enemiesArray = ["darth", "voldemort", "sauron"]
 
 console.log("What is your name?");
 process.stdin.on('data', (chunk) => {
-    let name = chunk.toString().trim();
+    let name = chunk.toString().trim().toLowerCase();
     if (enemiesArray.includes(name)) {
       console.log("NOOOOOO! Go away " + name + "!")
     } else {

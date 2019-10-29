@@ -202,6 +202,18 @@ process.stdin.once('data', (chunk) => {
 # Good Friend, Bad Friend solution
 
 <details>
+<summary>Hint</summary>
+When writing an `if...else` statement start with the most well defined case
+<div>
+
+```js
+if(name === "Darth")
+```
+
+</div>
+</details>
+
+<details>
 <summary>Solution</summary>
 <div>
 

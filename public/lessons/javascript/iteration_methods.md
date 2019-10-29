@@ -115,7 +115,7 @@ function endBerry(word) {
   return word.endsWith("berry")
 }
 
-fruits.find(endBerry)
+console.log(fruits.find(endBerry))
 ```
 
 </div>
@@ -156,7 +156,7 @@ function endBerry(word) {
   return word.endsWith("berry")
 }
 
-fruits.filter(endBerry)
+console.log(fruits.filter(endBerry))
 ```
 
 </div>

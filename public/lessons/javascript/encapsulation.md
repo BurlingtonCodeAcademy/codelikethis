@@ -7,7 +7,7 @@
 
 # Encapsulation in JavaScript
 
-[encapsulation](https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)) is an important principle of software design
+encapsulation is an important principle of software design
 
 essentially it means:
 

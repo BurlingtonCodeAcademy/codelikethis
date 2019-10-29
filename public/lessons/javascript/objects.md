@@ -213,11 +213,15 @@ NY is short for New York
 
 <details>
 <summary>Solution:</summary>
-<pre>
+<div>
+
+```js
 for (let state in states) {
     console.log(state + ' is short for ' + states[state]);
 }
-</pre>
+```
+
+</div>
 </details>
 
 **Note:** use "`for...of`" for arrays, use "`for...in`" for objects -- see [this article](https://bitsofco.de/for-in-vs-for-of/) for more detail about **of** vs. **in**.

@@ -53,7 +53,7 @@ A: *It depends!*
 
 (or, when there's any doubt, make your assumptions explicit)
 
-# LAB: one nation, divisible
+# LAB: One Nation, Divisible
 
 One number is *divisible* by another if you divide them and the **remainder** is 0.
 

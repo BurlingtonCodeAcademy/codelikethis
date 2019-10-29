@@ -247,14 +247,16 @@ What happens? Is this what you expected?
 1. Inside your `code` directory, create a file named `countdown.js`
 2. Inside this file, put the following source code:
 
-        let count = 10;
+```js
+let count = 10;
 
-        while (count > 0) {
-          console.log(count + '...');
-          count = count - 1;
-        }
+while (count > 0) {
+  console.log(count + '...');
+  count = count - 1;
+}
 
-        console.log('Blastoff!');
+console.log('Blastoff!');
+```
 
 3. Save the file
 4. In your terminal, run `node countdown.js`

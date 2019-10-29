@@ -59,6 +59,38 @@ For instance:
     Hi, Bob!
     Hi, Charlie!
 
+# Hi, Everbody Solution
+
+<details>
+<summary>Hint 1</summary>
+<div>
+`process.argv` <b>is an array</b> so you can perform any opertion you can perform on an array on it.
+</div>
+</details>
+
+<details>
+<summary>Hint 2</summary>
+<div>
+You should set the array of names to a variable for ease of use
+</div>
+</details>
+
+<details>
+<summary>Solution</summary>
+<div>
+
+```js
+let names = process.argv.slice(2)
+
+names.forEach(function(name){
+    console.log("Hello, " + name + "!")
+})
+```
+
+</div>
+</details>
+
+
 # LAB: Add
 
 Write a program named `add.js` that adds all of its command line arguments together.
@@ -74,6 +106,7 @@ e.g.
 
 <details>
 <summary>Hint 1</summary>
+Command line arguments are strings, so you need to convert them to numbers before you can use them.
 <div>
 
 ```js
@@ -85,6 +118,7 @@ let numberArray = process.argv.slice(2).map(number => parseInt(number))
 
 <details>
 <summary>Hint 2</summary>
+Create a global variable to track your running total.
 <div>
 
 ```js
