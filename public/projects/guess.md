@@ -2,9 +2,9 @@
 
 ![numbers](/images/numbers.jpg)
 
-### **Write a program that attempts to guess a number the user is thinking of**
+In this project you will write a program that attempts to guess a number the user is thinking of, and vice-versa
+
 <br>
-Note: <br>
 Before starting to code this project, please find a partner and play this game together verbally for a few rounds.
 
 1. Alice thinks of a number
