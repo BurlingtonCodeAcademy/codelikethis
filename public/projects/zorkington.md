@@ -17,7 +17,7 @@ In this project, you will create a version of Zork that takes place in the faraw
 ## Goals
 
 * utilizing functions, methods, and objects for a deeper understanding of encapsulation.
-* understand state and state transitions, which are useful in many areas, e.g. 
+* understand *state* and *state transitions*, which are useful in many areas, e.g. 
   * photo carousel
   * buttons, menus, other widgets
   * parsers
@@ -95,8 +95,6 @@ On the door is a handwritten sign.
 Sorry, I don't know how to gargle.
 ```
 
-<!--/BOX-->
-
 <details>
 <summary>Hint</summary>
 <div>
@@ -110,6 +108,9 @@ while(answer !== 'exit') {
 
 </div>
 </details>
+<!--/BOX-->
+
+
 
 <!--BOX-->
 ## Read the sign
