@@ -126,7 +126,9 @@ while(answer !== 'exit') {
 
 ```
 >_ read sign
-The sign says "Welcome to Burlington Code Academy! Come on up to the third floor. If the door is locked, use the code 12345."
+The sign says "Welcome to Burlington Code Academy!
+Come on up to the third floor.
+If the door is locked, use the code 12345."
 ```
 
 **And** puts the player in the `starting room`
@@ -198,8 +200,8 @@ The door is locked. There is a keypad on the door handle.
 
 ```
 >_enter code 12345
-Success! The door opens. You enter the foyer and the door
-shuts behind you.
+Success! The door opens.
+You enter the foyer and the door shuts behind you.
 ```
 
 **And** the player enters a `new room`
@@ -230,7 +232,14 @@ Bzzzzt! The door is still locked.
 **Then** the game displays a description, with at least one item in said description
 
 ```
-You are in a foyer. Or maybe it's an antechamber. Or a vestibule. Or an entryway. Or an atrium. Or a narthex. But let's forget all that fancy flatlander vocabulary, and just call it a foyer. In Vermont, this is pronounced "FO-ee-yurr". Anyways, it's definitely not a mudroom. 
+You are in a foyer. Or maybe it's an antechamber. 
+Or a vestibule. 
+Or an entryway. 
+Or an atrium. 
+Or a narthex. 
+But let's forget all that fancy flatlander vocabulary, and just call it a foyer.
+In Vermont, this is pronounced "FO-ee-yurr". 
+Anyways, it's definitely not a mudroom. 
 A copy of Seven Days lies in a corner.
 ```
 
