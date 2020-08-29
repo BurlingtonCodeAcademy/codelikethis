@@ -21,7 +21,7 @@ gem "rack-cache", "~> 1.12", ">= 1.12.0"
 gem "rake", "~> 13.0"
 gem "rake-notes", "~> 0.2"
 gem "rspec", "~> 3.8"
-gem "rollbar", "~> 2.25"
+gem "rollbar", "~> 3.0"
 gem "deckrb", git: "https://github.com/alexch/deck.rb.git"
 
 group :development, :test do
