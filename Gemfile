@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby "~> 2.5.5"
 
-gem "sinatra", "~> 2.0.8", ">= 2.0.8.1"
+gem "sinatra", "~> 2.1.0", ">= 2.0.8.1"
 gem "sinatra-contrib", "~> 2.0", ">= 2.0.8.1"
 gem "erector", ">=0.9.0"
 gem "puma", "~> 4.3", ">= 4.3.5"
