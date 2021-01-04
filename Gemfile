@@ -14,7 +14,7 @@ gem "chronic", "~> 0.10.2"
 gem "redcarpet", "~> 2.3"
 gem "rack-ssl", "~> 1.4", ">= 1.4.1"
 gem "barnes", "~> 0.0.7"
-gem "nokogiri", "~> 1.10", ">= 1.10.10" # fixed versions, for Windows
+gem "nokogiri", "~> 1.11", ">= 1.11.0" # fixed versions, for Windows
 gem 'newrelic_rpm', '~> 6.12', ">= 6.12.0.367"
 gem "oj", "~> 3.10", ">= 3.10.13"
 gem "rack-cache", "~> 1.12", ">= 1.12.0"
