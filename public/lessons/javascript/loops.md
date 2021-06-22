@@ -93,10 +93,11 @@ while (/* count is less than or equal to 100 */) {
 
 Remember, a while loop only runs while the check evaluates true
 
-
-    while(/*this expression is true...*/) {
-        // ...do this action
-    }
+```js
+while (/*this expression is true...*/) {
+  // ...do this action
+}
+```
 
 </div>
 </details>
@@ -106,11 +107,13 @@ Remember, a while loop only runs while the check evaluates true
 <summary>Solution</summary>
 <div>
 
-    let count = 1;
-    while (count <= 100) {
-      console.log(count);
-      count = count + 1;
-    }
+```js
+let count = 1;
+while (count <= 100) {
+  console.log(count);
+  count = count + 1;
+}
+```
 
 </div>
 </details>
