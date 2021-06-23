@@ -139,13 +139,7 @@ class App < Sinatra::Base
     end
 
     deck_page = Deck::SlideDeck.new(:slides => slides,
-                                    :title => page_title(lesson, "Slides"),
-                                    :stylesheets => [
-                                        # "/css/github-markdown.css",
-                                        "/css/slides.css",
-                                    ],
-                                    :theme => 'swiss',
-    )
+                                    :title => page_title(lesson, "Slides"))
     deck_page.to_html
   end
 
