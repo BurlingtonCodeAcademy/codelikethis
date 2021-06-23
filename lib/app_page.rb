@@ -59,7 +59,10 @@ class ThingPage < AppPage
                integrity: "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T",
                crossorigin: "anonymous"
     stylesheet name: 'app'
-
+    script defer: "defer",
+          src: "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"
+    script defer: "defer",
+          src: "/js/app.js"
   end
 
   def body_scripts
@@ -76,9 +79,6 @@ class ThingPage < AppPage
     script defer: "defer",
            src: "https://cdn.jsdelivr.net/combine/npm/@fortawesome/fontawesome-free@5.8.2,npm/@fortawesome/fontawesome-free@5.8.2/js/solid.min.js",
            crossorigin: "anonymous"
-
-    script defer: "defer",
-           src: "/js/app.js"
   end
 
   def footer_content
