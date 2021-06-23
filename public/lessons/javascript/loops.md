@@ -131,11 +131,14 @@ This is fairly complicated, so let's stop here and make sure to understand every
 
 # While breakdown (pt.1)
 
-    let count = 1
-
+```js
+let count = 1
+```
 creates a *variable* named `count` and sets its value to `1`.
 
-    while (count <= 100)
+```js
+while (count <= 100)
+```
 
 starts a loop and immediately compares `count` to `100`.
 
@@ -143,21 +146,29 @@ starts a loop and immediately compares `count` to `100`.
 
 # While breakdown (pt.2)
 
-      console.log(count);
+```js
+console.log(count);
+```
 
 prints the current value of count.
 
-      count = count + 1
+```js
+count = count + 1
+```
 
 *increments* the `count` variable... it was `1`, so now it's `2`
 
-    }
+```js
+}
+```
 
 goes *back to the `while` line* and checks again
 
 # While breakdown (pt.3)
 
-    while (count <= 100)
+```js
+while (count <= 100)
+```
 
 compares `count` to `100`.
 
@@ -192,7 +203,6 @@ for (let count = 1; count <= 100; count++) {
 }
 ```
 
-
 # For Loops with Arrays
 
 A `for` loop is often seen paired with an indexed data structure known as an Array
@@ -219,7 +229,7 @@ for (let line = 0; line < poemLines.length; line++) {
 
 We are using the for loop to get each item in the Array collection `poemLines`
 
-```
+```js
 let poemLines = [
   'Roses are red', 
   'Violets are blue', 
@@ -283,14 +293,16 @@ Now let's apply what we have learned about `while` and `for` loops to print a po
 
 Remember this poem?
 
-    1 potato,
-    2 potato,
-    3 potato,
-    4!
-    5 potato,
-    6 potato,
-    7 potato,
-    More!
+```txt
+1 potato,
+2 potato,
+3 potato,
+4!
+5 potato,
+6 potato,
+7 potato,
+More!
+```
 
 Please write a program called `potato.js` that prints that poem, using loops.
 
@@ -306,15 +318,17 @@ Create a function `poemLine` does only one thing; create the correct string for 
 <summary>Solution</summary>
 <div>
 
-    function poemLine(lineNumber) {
-      if (lineNumber === 8) {
-          return "More!"
-      } else if (lineNumber === 4) {
-          return "4!"
-      } else {
-          return lineNumber + " potato,"
-      }
-    }
+```js
+function poemLine(lineNumber) {
+  if (lineNumber === 8) {
+      return "More!"
+  } else if (lineNumber === 4) {
+      return "4!"
+  } else {
+      return lineNumber + " potato,"
+  }
+}
+```
 
 </div>
 </details>
@@ -327,24 +341,26 @@ The second part of the solution only loops, based on a counter `lineNumber`.
 <summary>Solution</summary>
 <div>
 
-    function poemLine(lineNumber) {
-      if (lineNumber === 8) {
-          return "More!"
-      } else if (lineNumber === 4) {
-          return "4!"
-      } else {
-          return lineNumber + " potato,"
-      }
-    }
+```js
+function poemLine(lineNumber) {
+  if (lineNumber === 8) {
+      return "More!"
+  } else if (lineNumber === 4) {
+      return "4!"
+  } else {
+      return lineNumber + " potato,"
+  }
+}
 
-    // New Code Below
+// New Code Below
 
-    let lineNumber = 1;
+let lineNumber = 1;
 
-    while (lineNumber <= 8) {
-      console.log(poemLine(lineNumber));
-      lineNumber = lineNumber + 1;
-    }
+while (lineNumber <= 8) {
+  console.log(poemLine(lineNumber));
+  lineNumber = lineNumber + 1;
+}
+```
 
 </div>
 </details>
@@ -357,27 +373,28 @@ An alternative solution uses `break` to stop looping after eight cycles.
 <summary>Solution</summary>
 <div>
 
-    function poemLine(lineNumber) {
-      if (lineNumber === 8) {
-          return "More!"
-      } else if (lineNumber === 4) {
-          return "4!"
-      } else {
-          return lineNumber + " potato,"
-      }
-    }
+```js
+function poemLine(lineNumber) {
+  if (lineNumber === 8) {
+      return "More!"
+  } else if (lineNumber === 4) {
+      return "4!"
+  } else {
+      return lineNumber + " potato,"
+  }
+}
 
-    // New Code Below
+// New Code Below
 
-    let lineNumber = 1;
+let lineNumber = 1;
 
-    while (true) {
-      console.log(poemLine(lineNumber));
-      lineNumber = lineNumber + 1;
-      if (lineNumber > 8) {
-          break;
-      }
-    }
-
+while (true) {
+  console.log(poemLine(lineNumber));
+  lineNumber = lineNumber + 1;
+  if (lineNumber > 8) {
+      break;
+  }
+}
+```
 </div>
 </details>
