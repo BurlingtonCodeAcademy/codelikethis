@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 ruby "~> 3.1.4"
 
-gem "sinatra", "~> 2.1"
-gem "sinatra-contrib", "~> 2.1"
+gem "sinatra", "~> 2.2", ">= 2.2.3"
+gem "sinatra-contrib", "~> 2.2", ">= 2.2.3"
 gem "erector", ">=0.9.0"
 gem "puma", "~> 5.1"
 gem "activesupport", "~> 6.0", ">= 6.0.3.1"
